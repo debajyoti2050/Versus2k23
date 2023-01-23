@@ -22,6 +22,7 @@ const About = () => {
           boxShadow:"6px 6px 2px gray"
      };
   return (
+    <>
     <div>About</div>
     <div style={myStyle}>
                <div style={left_div} className="left">
@@ -34,6 +35,7 @@ const About = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi reprehenderit quos fugiat sit hic voluptatem, molestias cumque, similique repudiandae illo? Fugiat reiciendis at impedit nesciunt repellat veritatis sed perferendis?
                </div>
           </div>
+          </>
   )
 }
 
