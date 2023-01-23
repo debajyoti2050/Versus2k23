@@ -22,7 +22,7 @@ const About = () => {
           boxShadow:"6px 6px 2px gray"
      };
   return (
-     <>
+    <>
     <div>About</div>
     <div style={myStyle}>
                <div style={left_div} className="left">
