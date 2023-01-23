@@ -1,0 +1,41 @@
+footer {
+  padding-block: 80px;
+  background-color: black;
+  color: white;
+}
+.flex {
+    display: flex;
+    align-items: center;
+  }
+.link-column {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.link-column a,
+h4 {
+  font-family: "Russo One", sans-serif;
+  color: white;
+}
+.footer-container {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.iem-logo img {
+  width: 220px;
+}
+.versus-logo img {
+  width: 200px;
+}
+/* subfooter */
+.subfooter {
+  background-color: black;
+  padding: var(--padding-inline);
+}
+.subfooter-container {
+  justify-content: center;
+  gap: 30px;
+}
+.subfooter-container a {
+   color: white;
+}

@@ -22,10 +22,11 @@ const About = () => {
           boxShadow:"6px 6px 2px gray"
      };
   return (
+     <>
     <div>About</div>
     <div style={myStyle}>
                <div style={left_div} className="left">
-                  //image
+                  
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum iure voluptatum temporibus sunt, enim odit reprehenderit quaerat aliquam dolorem facere quod id cumque error nulla quia earum aut, expedita totam.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloremque nulla eum omnis non tempore vel soluta ut, asperiores laborum sunt quidem velit minus quod veritatis doloribus qui accusantium odio!
                </div>
@@ -34,6 +35,7 @@ const About = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi reprehenderit quos fugiat sit hic voluptatem, molestias cumque, similique repudiandae illo? Fugiat reiciendis at impedit nesciunt repellat veritatis sed perferendis?
                </div>
           </div>
+          </>
   )
 }
 
