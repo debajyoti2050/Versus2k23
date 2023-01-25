@@ -1,6 +1,6 @@
 footer {
   padding-block: 80px;
-  background-color: black;
+  /* background-color: black; */
   color: white;
 }
 .flex {
@@ -29,7 +29,7 @@ h4 {
 }
 /* subfooter */
 .subfooter {
-  background-color: black;
+  /* background-color: black; */
   padding: var(--padding-inline);
 }
 .subfooter-container {
