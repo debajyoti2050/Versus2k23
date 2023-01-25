@@ -36,9 +36,8 @@ const Hero = () => {
   return (
     <>
       <header>
-        <div classNameName="hero-video flex">
-          <p>Let the War Begin</p>
-          <svg
+        <div className="hero-video flex">
+        <svg
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -130,6 +129,7 @@ const Hero = () => {
               </g>
             </g>
           </svg>
+          <p>Let the War Begin</p>
           {user ? (
             <h3>hello {user.displayName} </h3>
           ) : (
@@ -146,12 +146,12 @@ const Hero = () => {
           ) : (
             <></>
           )}
-          {/* <button onClick={handleGoogleSignIn} classNameName="primary-button">Register Now</button> */}
-          <video classNameName="video-bg" autoPlay loop muted>
+          {/* <button onClick={handleGoogleSignIn} className="primary-button">Register Now</button> */}
+          <video className="video-bg" autoPlay loop muted>
             <source src={BgVideo} type="video/mp4" />
           </video>
         </div>
-      </header>
+      </header>
       {/* <About /> */}
       <div>
       <section className="big-glassmorphism-card">

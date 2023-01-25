@@ -18,7 +18,7 @@ const Navbar = () => {
         <nav className="navbar" onClick={(e) => e.stopPropagation()}>
           <div className="nav-container">
             <NavLink exact to="/" className="nav-logo">
-              {/* <img src={Logo} alt="logo" /> */}
+              <img src={Logo} alt="logo" />
             </NavLink>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">

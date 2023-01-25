@@ -27,15 +27,17 @@
     right:0;
     background-color:rgba(0,0,0,0.3);
   }
-  
-  .nav-logo {
+  .nav-logo img{
     /* color: #f5b921; */
+    position:fixed;
     align-items: center;
-    margin-left: 20px;
+    
     cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
     flex-grow: 1;
+    height: 55px;
+    /* width : 30px; */
+    left: 20px;
+    top: 6px;
   }
   
   .nav-menu {
