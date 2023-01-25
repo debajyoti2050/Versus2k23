@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import About from "./About";
 import "../styles/Hero.css";
+import "../styles/hero.scss";
 import BgVideo from "../assets/bg.mp4";
 import {
   GoogleAuthProvider,
@@ -132,12 +133,14 @@ const Hero = () => {
           {user ? (
             <h3>hello {user.displayName} </h3>
           ) : (
-            <button onClick={handleGoogleSignIn} classNameName="primary-button">
-              Register Now
-            </button>
+           
+              <button onClick={handleGoogleSignIn} type="button" class="login-with-google-btn">
+                Sign in with Google
+              </button>
+           
           )}
           {user ? (
-            <button onClick={() => signOut(auth)} classNameName="primary-button">
+            <button onClick={() => signOut(auth)} className="primary-button">
               Sign Out
             </button>
           ) : (
@@ -237,7 +240,6 @@ const Hero = () => {
       </div>
     </section>
       </div>
-
     </>
   );
 };
