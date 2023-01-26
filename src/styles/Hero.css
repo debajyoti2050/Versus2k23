@@ -6,6 +6,10 @@ a {
   display: inline-block;
   text-decoration: none;
 }
+.versus{
+  /* height:200px; */
+  width: calc(100% - 200px);
+}
 .primary-button {
   border-radius: 3em;
   background-color: red;

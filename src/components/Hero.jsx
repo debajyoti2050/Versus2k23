@@ -37,7 +37,8 @@ const Hero = () => {
     <>
       <header>
         <div className="hero-video flex">
-        <svg
+          <div className="versus">
+          <svg
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -129,15 +130,20 @@ const Hero = () => {
               </g>
             </g>
           </svg>
+          </div>
+
+          
           <p>Let the War Begin</p>
           {user ? (
             <h3>hello {user.displayName} </h3>
           ) : (
-           
-              <button onClick={handleGoogleSignIn} type="button" class="login-with-google-btn">
-                Sign in with Google
-              </button>
-           
+            <button
+              onClick={handleGoogleSignIn}
+              type="button"
+              class="login-with-google-btn"
+            >
+              Sign in with Google
+            </button>
           )}
           {user ? (
             <button onClick={() => signOut(auth)} className="primary-button">
@@ -151,94 +157,95 @@ const Hero = () => {
             <source src={BgVideo} type="video/mp4" />
           </video>
         </div>
-      </header>
+              
+      </header>
       {/* <About /> */}
       <div>
-      <section className="big-glassmorphism-card">
-      <div className="container glassmorphism-card flex">
-        <div className="big-feature-image">
-          <img src="images/valo bg 1.jpg" alt="" />
-        </div>
-        <div className="descirp flex">
-          <h4>1v1</h4>
-          <h3>NFS</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia
-            impedit voluptas, reiciendis voluptate dolor ut nisi dignissimos at
-            odit sunt id aliquid magni nobis incidunt. Blanditiis ipsa
-            asperiores rem.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section className="big-glassmorphism-card">
-      <div className="container glassmorphism-card flex">
-        <div className="descirp-2 flex">
-          <h4>1v1</h4>
-          <h3>NFS</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia
-            impedit voluptas, reiciendis voluptate dolor ut nisi dignissimos at
-            odit sunt id aliquid magni nobis incidunt. Blanditiis ipsa
-            asperiores rem.
-          </p>
-        </div>
-        <div className="big-feature-image-2">
-          <img src="images/pes.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-    <section className="big-glassmorphism-card">
-      <div className="container glassmorphism-card flex">
-        <div className="big-feature-image">
-          <img src="images/416648.jpg" alt="" />
-        </div>
-        <div className="descirp flex">
-          <h4>1v1</h4>
-          <h3>NFS</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia
-            impedit voluptas, reiciendis voluptate dolor ut nisi dignissimos at
-            odit sunt id aliquid magni nobis incidunt. Blanditiis ipsa
-            asperiores rem.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section className="big-glassmorphism-card">
-      <div className="container glassmorphism-card flex">
-        <div className="descirp-2 flex">
-          <h4>1v1</h4>
-          <h3>NFS</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia
-            impedit voluptas, reiciendis voluptate dolor ut nisi dignissimos at
-            odit sunt id aliquid magni nobis incidunt. Blanditiis ipsa
-            asperiores rem.
-          </p>
-        </div>
-        <div className="big-feature-image-2">
-          <img src="images/6164273.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-    <section className="big-glassmorphism-card">
-      <div className="container glassmorphism-card flex">
-        <div className="big-feature-image">
-          <img src="images/maxresdefault.jpg" alt="" />
-        </div>
-        <div className="descirp flex">
-          <h4>1v1</h4>
-          <h3>NFS</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quia
-            impedit voluptas, reiciendis voluptate dolor ut nisi dignissimos at
-            odit sunt id aliquid magni nobis incidunt. Blanditiis ipsa
-            asperiores rem.
-          </p>
-        </div>
-      </div>
-    </section>
+        <section className="big-glassmorphism-card">
+          <div className="container glassmorphism-card flex">
+            <div className="big-feature-image">
+              <img src="images/valo bg 1.jpg" alt="" />
+            </div>
+            <div className="descirp flex ">
+              <h4>1v1</h4>
+              <h3>NFS</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+                quia impedit voluptas, reiciendis voluptate dolor ut nisi
+                dignissimos at odit sunt id aliquid magni nobis incidunt.
+                Blanditiis ipsa asperiores rem.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="big-glassmorphism-card">
+          <div className="container glassmorphism-card flex">
+            <div className="descirp-2 flex">
+              <h4>1v1</h4>
+              <h3>NFS</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+                quia impedit voluptas, reiciendis voluptate dolor ut nisi
+                dignissimos at odit sunt id aliquid magni nobis incidunt.
+                Blanditiis ipsa asperiores rem.
+              </p>
+            </div>
+            <div className="big-feature-image-2">
+              <img src="images/pes.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section className="big-glassmorphism-card">
+          <div className="container glassmorphism-card flex">
+            <div className="big-feature-image">
+              <img src="images/416648.jpg" alt="" />
+            </div>
+            <div className="descirp flex">
+              <h4>1v1</h4>
+              <h3>NFS</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+                quia impedit voluptas, reiciendis voluptate dolor ut nisi
+                dignissimos at odit sunt id aliquid magni nobis incidunt.
+                Blanditiis ipsa asperiores rem.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="big-glassmorphism-card">
+          <div className="container glassmorphism-card flex">
+            <div className="descirp-2 flex">
+              <h4>1v1</h4>
+              <h3>NFS</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+                quia impedit voluptas, reiciendis voluptate dolor ut nisi
+                dignissimos at odit sunt id aliquid magni nobis incidunt.
+                Blanditiis ipsa asperiores rem.
+              </p>
+            </div>
+            <div className="big-feature-image-2">
+              <img src="images/6164273.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section className="big-glassmorphism-card">
+          <div className="container glassmorphism-card flex">
+            <div className="big-feature-image">
+              <img src="images/maxresdefault.jpg" alt="" />
+            </div>
+            <div className="descirp flex">
+              <h4>1v1</h4>
+              <h3>NFS</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+                quia impedit voluptas, reiciendis voluptate dolor ut nisi
+                dignissimos at odit sunt id aliquid magni nobis incidunt.
+                Blanditiis ipsa asperiores rem.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );

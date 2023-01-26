@@ -1,48 +1,40 @@
 import React from 'react'
 import "../styles/Footer.css"
+import Versus from "../assets/logo_gold.png"
+import IEM from "../assets/logo_white.png"
+import { Instagram, Facebook, Twitter, Envelope,Phone, Linkedin } from 'react-bootstrap-icons';
 
 const Footer = () => {
   return (
     <>
-    {
-      console.log("Footer")
-    }
-    <footer>
-      <div className="container flex footer-container">
-        <div className="link-column flex">
-          <h4>About</h4>
-          <a href="#" className="hover-link">ABOUT US</a>
-          <a href="#" className="hover-link">COOL</a>
-          <a href="#" className="hover-link">HEllo</a>
-          <a href="#" className="hover-link">Page</a>
-          <a href="#" className="hover-link">Yo</a>
+    <footer className="footer" id='contact'>
+      <div className="container">
+        <div className="row pt-4 pb-4">
+          <div className="col-lg-3 col-xs-12 social-media">
+            <h3>CONNECT WITH US</h3>
+            <p className="socials">
+              <a href="" className="facebook mx-1" target="_blank"><Facebook size={30}/></a>
+              <a href="" className="instagram mx-1" target="_blank"><Instagram size={30} /></a>
+            </p>
+          </div>
+          <br className="hide desktop-show"></br>
+          <div className="col-lg-6 col-xs-12 images">
+            <img src={Versus} />       
+            <img src={IEM} />       
+            <br/>
+          </div>
+          <div className="col-lg-3 col-xs-12 contact" style={{textAlign:"center"}}>
+            <h3 className="mt-lg-0 mt-sm-4">CONTACT US</h3>
+            <p>
+            <p><a className='phone' href='tel:98049 58460'><Phone size={20}/> (+91) 123456789 </a></p>
+            <p ><a className="mailto" href="mailto:iic@iemcal.com"><Envelope size={18}/> </a></p>
+            </p>
+          </div>
         </div>
-        <a href="#" className="iem-logo">
-          <img src="images/IEM NEW LOGO (1)white logo 2.png" alt="IEM-logo" />
-        </a>
-        <a href="#" className="versus-logo">
-          <img src="images/logo gold cropped 3.png" alt="IEM-logo" />
-        </a>
-        <div className="link-column flex">
-          <h4>Resources</h4>
-          <a href="#" className="hover-link">ABOUT US</a>
-          <a href="#" className="hover-link">COOL</a>
-          <a href="#" className="hover-link">HEllo</a>
-          <a href="#" className="hover-link">Page</a>
-          <a href="#" className="hover-link">Yo</a>
-        </div>
+      </div>
+      <div className="footer-copyright text-center py-4">© 2023 : All Rights Reserved by <b>Versus</b>
       </div>
     </footer>
-
-    <div className="subfooter">
-      <div className="container flex subfooter-container">
-        <a href="#" className="hover-link">Privacy policy</a>
-        <a href="#" className="hover-link">Terms & Condition</a>
-        <a href="#" className="hover-link">Security information</a>
-        <a href="#" className="hover-link"><i className="fa-brands fa-facebook"></i></a>
-        <a href="#" className="hover-link"><i className="fa-brands fa-twitter"></i></a>
-      </div>
-      </div>
     </>
   )
 }
