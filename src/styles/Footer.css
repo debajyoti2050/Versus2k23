@@ -1,41 +1,104 @@
-footer {
-  padding-block: 80px;
-  background-color: black;
-  color: white;
+.footer{
+  background:rgb(22, 22, 22);
+  color:white;
 }
-.flex {
-    display: flex;
-    align-items: center;
-  }
-.link-column {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-.link-column a,
-h4 {
-  font-family: "Russo One", sans-serif;
-  color: white;
-}
-.footer-container {
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.iem-logo img {
-  width: 220px;
-}
-.versus-logo img {
-  width: 200px;
-}
-/* subfooter */
-.subfooter {
-  background-color: black;
-  padding: var(--padding-inline);
-}
-.subfooter-container {
+
+.footer .element-center{
+  display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
 }
-.subfooter-container a {
-   color: white;
+.footer .our-links >ul{
+  list-style-type: none;
+}
+
+.footer .our-links > ul > li > a{
+      /* margin-left: 20px; */
+      text-decoration: none;
+      color: rgb(254, 254, 254);
+      transition: color .2s;
+}
+
+.footer .our-links > ul > li > a:hover{
+  color:#f41515
+}
+
+.footer .images >img{
+  width: 200px;
+  height: 180px;
+  margin: 10px;
+  transition: transform .2s;
+}
+.footer .social-media, .contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .social-media .p .a{
+  color:white;
+  transition: color .2s;
+}
+.footer .contact p {
+  line-height: 26px;
+}
+
+.mailto{
+  color: rgb(255, 255, 255);
+  transition: color .2s;
+}
+.phone{
+  color: rgb(255, 255, 255);
+  transition: color .2s;
+}
+.location{
+  color: rgb(255, 255, 255);
+  transition: color .2s;
+}
+
+.social-media h3{
+  text-align: center;
+}
+
+.socials{
+  text-align: center;
+}
+
+.images{
+  text-align: center;
+}
+
+.footer .social-media >p >a{
+  color:rgb(255, 255, 255);
+  font-size: 36px;
+}
+.footer .social-media >p >a.instagram:hover {
+  color: #ff3399;
+}
+.footer .social-media >p >a.facebook:hover {
+  color: #4267B2;
+}
+.footer .social-media >p >a.twitter:hover {
+  color: #00ACEE;
+}
+.footer .social-media >p >a.linkedin:hover {
+  color: #0961B8;
+}
+.footer .social-media >p >a.youtube:hover {
+  color: #f41515;
+}
+
+.footer-copyright{
+  background-color: black;
+  margin-bottom: -50px;
+}
+.footer-copyright >b{
+  font-size: 15px;
+}
+
+@media(max-width:992px){
+  .footer{
+      text-align: center;
+  }
+  
 }
