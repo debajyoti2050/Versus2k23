@@ -8,7 +8,8 @@ a {
 }
 .versus{
   /* height:200px; */
-  width: calc(100% - 200px);
+  width: calc(100% - 600px);
+  height : 200px;
 }
 .primary-button {
   border-radius: 3em;
@@ -18,7 +19,7 @@ a {
   transition: 0.2s ease;
 }
 .primary-button:hover {
-  background-color: rgb(99, 44, 88);
+  background-color: rgb(173, 30, 144);
   color: white;
 }
 .hero-video {
@@ -26,7 +27,7 @@ a {
   align-items: center;
   text-align: center;
   /* background-color: #000000; */
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.555);
   color: white;
   position: relative;
   overflow: hidden;
