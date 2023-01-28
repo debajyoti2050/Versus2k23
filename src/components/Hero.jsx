@@ -64,14 +64,14 @@ const Hero = () => {
               >
                 <stop offset="0" stop-color="#fff" />
                 <stop offset=".06" stop-color="#eee7d9" />
-                <stop offset=".16" stop-color="#d8c8a8" />
-                <stop offset=".26" stop-color="#c5ad7c" />
-                <stop offset=".36" stop-color="#b59657" />
-                <stop offset=".46" stop-color="#a88339" />
-                <stop offset=".58" stop-color="#9d7522" />
-                <stop offset=".7" stop-color="#966b11" />
-                <stop offset=".83" stop-color="#926408" />
-                <stop offset="1" stop-color="#916305" />
+                <stop offset=".16" stop-color="#eee7d9" />
+                <stop offset=".26" stop-color="#eee7d9" />
+                <stop offset=".36" stop-color="#eee7d9" />
+                <stop offset=".46" stop-color="#eee7d9" />
+                <stop offset=".58" stop-color="#eee7d9" />
+                <stop offset=".7" stop-color="#eee7d9" />
+                <stop offset=".83" stop-color="#ffffff" />
+                <stop offset="1" stop-color="#ffffff" />
               </linearGradient>
               <linearGradient
                 id="linear-gradient-2"
