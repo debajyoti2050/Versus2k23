@@ -1,11 +1,12 @@
+import { Route, Routes } from "react-router";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+   <Routes>
+    <Route exact path="/" element={<Home />} />
+   </Routes>
   );
 }
 
