@@ -8,8 +8,10 @@ a {
 }
 .versus{
   /* height:200px; */
-  width: calc(100% - 600px);
-  height : 200px;
+  width: calc(100% - 900px);
+  margin-bottom: 50px;
+  margin-top: 70px;
+  /* height : 300px; */
 }
 .primary-button {
   border-radius: 3em;
@@ -27,7 +29,7 @@ a {
   align-items: center;
   text-align: center;
   /* background-color: #000000; */
-  background: rgba(0, 0, 0, 0.555);
+  background: rgba(0, 0, 0, 0.700);
   color: white;
   position: relative;
   overflow: hidden;
