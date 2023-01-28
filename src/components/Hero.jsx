@@ -11,6 +11,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase";
 import { useEffect } from "react";
+import axios from "axios";
 
 const Hero = () => {
   const [user, setUser] = useState(null);
@@ -20,6 +21,13 @@ const Hero = () => {
     signInWithPopup(auth, googleProvider)
       .then(async (result) => {
         console.log(result);
+        try{
+          const {data} = await axios.post('https://versus2k23-backend.onrender.com/api/v1/registerUser',{ name : result.user.displayName, email : result.user.email })
+          console.log(data);
+        }
+        catch(err){
+          console.log(err)
+        }
       })
       .catch((error) => {
         console.log(error);
