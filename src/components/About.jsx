@@ -1,42 +1,58 @@
-import React from 'react'
+import React from "react";
+import versus from "./versus.jpeg";
 
-const About = () => {
-  const myStyle = {
-          padding:"30px",
-         display:"flex",
-         justifyContent:"space-between"
+
+export default function Ab() {
+     const cover = {
+          backgroundImage: `url(${process.env.PUBLIC_URL
+               +"https://elements-video-cover-images-0.imgix.net/files/895ba192-5ebc-43f1-9df8-6c80bd997356/inline_image_preview.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=90b18a2580b7efd6e7fdc648f68586a0"})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          margin: "40px"
      }
-     const left_div={
-          
-          backgroundColor:"#03042C",
+     const heading = {
+          textAlign: "center",
+          fontWeight:"800",
+          fontSize:"44px",
           color:"white",
-     width:"48%",
-     height:"700px",
-     boxShadow:"6px 6px 2px gray"
+          textShadow:"3px 3px black"
      }
-     const right={
-          backgroundColor:"#03042C",
+     const body = {
           color:"white",
-          width:"48%",
-          height:"700px",
-          boxShadow:"6px 6px 2px gray"
+          fontWeight:"700",
+          backdropFilter:"blur(20px)",
+          padding: "30px",
+          boxShadow: "4px 4px 4px 4px black",
+          margin: "50px",
+          marginLeft: "250px",
+          marginRight: "250px",
+          borderRadius:"18px"
+     }
+     const logo = {
+          marginRight: "30px",
+          float: "left"
      };
-  return (
-    <>
-    <div>About</div>
-    <div style={myStyle}>
-               <div style={left_div} className="left">
-                  
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum iure voluptatum temporibus sunt, enim odit reprehenderit quaerat aliquam dolorem facere quod id cumque error nulla quia earum aut, expedita totam.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloremque nulla eum omnis non tempore vel soluta ut, asperiores laborum sunt quidem velit minus quod veritatis doloribus qui accusantium odio!
-               </div>
-               <div style={right} className="right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis aperiam adipisci perspiciatis ut architecto velit, numquam doloremque animi nostrum voluptate repellat non aliquid similique minima enim. Magni, quaerat dicta.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi reprehenderit quos fugiat sit hic voluptatem, molestias cumque, similique repudiandae illo? Fugiat reiciendis at impedit nesciunt repellat veritatis sed perferendis?
-               </div>
-          </div>
-          </>
-  )
-}
+     return (
 
-export default About
+          <div style={cover}>
+               <br /><br />
+               <div style={heading}>
+                    ABOUT VERSUS
+               </div>
+               <br /><br /><br />
+               <div style={body}>
+                    <img src={versus} style={logo} alt="versus logo" />
+                    <div>
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque dignissimos ipsam consequuntur consectetur, voluptate quas. Suscipit consequatur sint minima labore nihil distinctio nulla, officiis, quasi magnam eaque voluptas laborum.
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis, nihil totam error fugiat quae! Consequatur, sed adipisci. Sunt laboriosam nisi, dolores quos odit facilis autem possimus obcaecati asperiores veniam!
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit itaque excepturi, ex voluptatum asperiores aspernatur provident laborum? Rerum modi tempora voluptatem enim error vitae, dolorem expedita ex veritatis aperiam nesciunt?
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, velit. Quisquam animi consequuntur voluptate, excepturi hic iste repellendus ut voluptatibus voluptatum corrupti sint doloribus. Maxime, architecto ipsa! Vero, quasi placeat?
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+               
+               </div>
+               <br /><br />
+          </div>
+
+     )
+}
