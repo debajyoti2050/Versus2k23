@@ -185,7 +185,7 @@ video {
   background: #8a09488c;
   align-items: center;
   padding:6px 7px;
-  width: 200px;
+  /* width: 200px; */
   border-radius: 15px;
 }
 .profile-img {
