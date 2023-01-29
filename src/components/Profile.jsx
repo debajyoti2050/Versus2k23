@@ -3,24 +3,33 @@ import "../styles/Profile.css";
 import ProfileIMG from "../assets/DummyProfileImg.jpg";
 import Background from "../assets/backgroundimg.jpg";
 import Navbar from "./Navbar";
-import { onAuthStateChanged } from "@firebase/auth";
+import { onAuthStateChanged, signOut } from "@firebase/auth";
 import { auth } from "../firebase";
 import { Navigate, useNavigate } from "react-router";
 
 const Profile = () => {
   const [user, setUser] = useState(null);
+  const [photoURL, setPhotoURL] = useState(null);
+  const [updatedPhotoURL, setUpdatedPhotoURL] = useState(null);
   const navigate = useNavigate()
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
+        setPhotoURL(user?.photoURL);
+        const originalURL="s96-c";
+        const newURL="s400-c";
+        const path = photoURL?.toString()
+        const newPhotoURL=path?.replace(originalURL,newURL);
+        console.log(newPhotoURL);
+        setUpdatedPhotoURL(newPhotoURL);
       } else {
         setUser(null);
         navigate('/')
       }
       console.log(user);
     });
-  }, [user]);
+  }, [navigate, photoURL, user]);
   return (
     <>
       <Navbar />
@@ -29,12 +38,23 @@ const Profile = () => {
         <div className="details mt-4">
           <div className="row">
             <div className="col-lg-3 col-md-6">
-              <img className="profileimg" src={user?.photoURL} alt="" />
+              {updatedPhotoURL ? (
+                <img referrerPolicy='no-referrer' className="profileimg" src={updatedPhotoURL} alt="" />
+              ) : (
+                <></>
+              )}
             </div>
             <div className="detailsText col-lg-3 col-md-6">
               <h4>{user?.displayName}</h4>
               <p>{user?.email}</p>
               <p>9876543210</p>
+              {user ? (
+            <button onClick={() => signOut(auth)} className="primary-button">
+              Sign Out
+            </button>
+          ) : (
+            <></>
+          )}
             </div>
           </div>
         </div>

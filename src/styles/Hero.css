@@ -149,7 +149,6 @@ video {
     height: 100%;
   }
   .descirp, .descirp-2 {
-    height: 22em;
     border-radius: 1em;
     padding-inline: var(--padding-inline);
     justify-content: center;
@@ -158,8 +157,8 @@ video {
     gap: 15px;
     color:bisque
   }
-  .descrip-2 h3{
-    font-size: 2em;
+  .descirp h3 , .descirp-2 h3{
+    font-size: 1.7em;
   }
 
   .big-feature-image, .big-feature-image-2 {
@@ -170,9 +169,41 @@ video {
     width: calc(100% - 140px);
     margin-top: 50px;
   }
-  
 }
-    
+  
+/* Profile Button */
 
-
-
+.profilebutton{
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  border: 3px solid #b1a2c3;
+  color: rgb(245, 203, 230);
+  flex-direction: row;
+  gap: 2em;
+  background: #520c97;
+  align-items: center;
+  padding:8px 9px;
+  /* width: 200px; */
+  border-radius: 15px;
+}
+.profile-img {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+.info {
+  /* margin-right: 5px; */
+  margin-top: 9px;
+  font-weight: 500;
+}
+.info h1 {
+  font-size: 25px;
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
+}
+.card:hover {
+  background-color: #1B003D;
+  color: white;
+}
