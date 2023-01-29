@@ -3,7 +3,7 @@ import "../styles/Profile.css";
 import ProfileIMG from "../assets/DummyProfileImg.jpg";
 import Background from "../assets/backgroundimg.jpg";
 import Navbar from "./Navbar";
-import { onAuthStateChanged } from "@firebase/auth";
+import { onAuthStateChanged, signOut } from "@firebase/auth";
 import { auth } from "../firebase";
 import { Navigate, useNavigate } from "react-router";
 
@@ -48,6 +48,13 @@ const Profile = () => {
               <h4>{user?.displayName}</h4>
               <p>{user?.email}</p>
               <p>9876543210</p>
+              {user ? (
+            <button onClick={() => signOut(auth)} className="primary-button">
+              Sign Out
+            </button>
+          ) : (
+            <></>
+          )}
             </div>
           </div>
         </div>

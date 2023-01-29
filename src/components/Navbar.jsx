@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/Navbar.css"
-import Logo from '../assets/logo.png'
-import IEM from '../assets/logo_white.png'
+import "../styles/Navbar.css";
+import Logo from "../assets/logo.png";
+import IEM from "../assets/logo_white.png";
 
 const Navbar = () => {
   const [click, setClick] = React.useState(false);
@@ -19,9 +19,8 @@ const Navbar = () => {
         <nav className="navbar" onClick={(e) => e.stopPropagation()}>
           <div className="nav-container">
             <NavLink exact to="/" className="nav-logo">
-            <img  src={IEM} alt="logo" />
-              <img src={Logo} alt="logo" />
-              
+              <img src={IEM} alt="logo" />
+              <img src={Logo} className="mx-3" alt="logo" />
             </NavLink>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">

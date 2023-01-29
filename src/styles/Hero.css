@@ -169,9 +169,41 @@ video {
     width: calc(100% - 140px);
     margin-top: 50px;
   }
-  
 }
-    
+  
+/* Profile Button */
 
-
-
+.profilebutton{
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  border: 4px solid #1B003D;
+  color: rgb(245, 203, 230);
+  flex-direction: row;
+  gap: 2em;
+  background: #8a09488c;
+  align-items: center;
+  padding:6px 7px;
+  width: 200px;
+  border-radius: 15px;
+}
+.profile-img {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+.info {
+  /* margin-right: 5px; */
+  margin-top: 9px;
+  font-weight: 500;
+}
+.info h1 {
+  font-size: 25px;
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
+}
+.card:hover {
+  background-color: #1B003D;
+  color: white;
+}

@@ -10,6 +10,7 @@ import CS from "../assets/cs1.6_web.jpg";
 import NFS from "../assets/nfs-mw_web.jpg";
 import {
   GoogleAuthProvider,
+  PhoneMultiFactorGenerator,
   onAuthStateChanged,
   signInWithPopup,
   signOut,
@@ -150,24 +151,28 @@ const Hero = () => {
           <p>Let the War Begin</p>
           {user ? (
             <>
-              <h3>Welcome </h3>
-              <h3>{user.displayName}</h3>
+              <div className="flex">
+                <a href="/profile" className="profile-button">
+                  <div className="card flex">
+                    <img src={user?.photoURL} className="profile-img" alt="" />
+                    <div className="info">
+                      <h1>
+                        Profile&nbsp;
+                        <i class="bi bi-arrow-up-right"></i>
+                      </h1>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </>
           ) : (
             <button
               onClick={handleGoogleSignIn}
               type="button"
-              class="login-with-google-btn"
+              className="login-with-google-btn"
             >
               Sign In with Google
             </button>
-          )}
-          {user ? (
-            <button onClick={() => signOut(auth)} className="primary-button">
-              Sign Out
-            </button>
-          ) : (
-            <></>
           )}
           {/* <button onClick={handleGoogleSignIn} className="primary-button">Register Now</button> */}
           <video className="video-bg" autoPlay loop muted>
@@ -290,9 +295,6 @@ const Hero = () => {
       </div>
 
       {/* <About/> */}
-
-
-
     </>
   );
 };
