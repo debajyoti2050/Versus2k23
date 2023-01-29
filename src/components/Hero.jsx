@@ -6,8 +6,8 @@ import BgVideo from "../assets/bg.mp4";
 import BGMI from "../assets/bgmi.jpg";
 import Valorant from "../assets/valorant_web.jpg";
 import Ball from "../assets/8ball_web.jpg";
-import CS from '../assets/cs1.6_web.jpg'
-import NFS from '../assets/nfs-mw_web.jpg'
+import CS from "../assets/cs1.6_web.jpg";
+import NFS from "../assets/nfs-mw_web.jpg";
 import {
   GoogleAuthProvider,
   onAuthStateChanged,
@@ -179,101 +179,111 @@ const Hero = () => {
       <div>
         <section className="big-glassmorphism-card">
           <div className="container glassmorphism-card flex">
-            <div className="big-feature-image">
-              <img src={Valorant} alt="" />
-            </div>
-            <div className="descirp flex ">
-              <h4>5v5</h4>
-              <h3>Valorant</h3>
-              <p>
-                VALORANT is a 5v5 character-based tactical FPS where precise
-                gunplay meets unique agent abilities. The main objective is to
-                attack or defend a point. To win a round, the attackers must
-                either eliminate all the defenders with their weapons and
-                abilities, or plant a bomb and make it explode. The defenders
-                must eliminate all the attackers or prevent them from planting
-                their bomb.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section className="big-glassmorphism-card">
-          <div className="container glassmorphism-card flex">
-            <div className="descirp-2 flex">
-              <h4>Battle Royale</h4>
-              <h3>BGMI</h3>
-              <p>
-                Battlegrounds Mobile India, or BGMI, is a player-versus-player
-                shooter game, in which, up to 100 players compete in a battle
-                royale, a type of large-scale last man standing deathmatch. It
-                is one of the largest mobile eSports in the world. It is a
-                virtual playground that welcomes you to spawn, loot and take
-                over the gaming world to gain the first position and have the
-                opportunity to taste the chicken dinner.
-              </p>
-            </div>
-            <div className="big-feature-image-2">
-              <img src={BGMI} alt="" />
+            <div className="row">
+              <div className="big-feature-image col-lg-6 p-3 col-sm-12">
+                <img src={Valorant} alt="" />
+              </div>
+              <div className="descirp flex p-5 col-lg-6 col-sm-12">
+                <h4>5v5</h4>
+                <h3>Valorant</h3>
+                <p>
+                  VALORANT is a 5v5 character-based tactical FPS where precise
+                  gunplay meets unique agent abilities. The main objective is to
+                  attack or defend a point. To win a round, the attackers must
+                  either eliminate all the defenders with their weapons and
+                  abilities, or plant a bomb and make it explode. The defenders
+                  must eliminate all the attackers or prevent them from planting
+                  their bomb.
+                </p>
+              </div>
             </div>
           </div>
         </section>
         <section className="big-glassmorphism-card">
           <div className="container glassmorphism-card flex">
-            <div className="big-feature-image">
-              <img src={Ball} alt="" />
-            </div>
-            <div className="descirp flex">
-              <h4>1v1</h4>
-              <h3>8 ball pool</h3>
-              <p>
-                8 ball pool is one of the most popular and highly addictive
-                table games which is played professionally all over the world.
-                It is an addictive challenging game based on real pool games,
-                where one challenges their friends online and can play in
-                multiplayer or PvP modes using different balls and table types.
-                So select your Club and get ready to become the master of the
-                pool!
-              </p>
-            </div>
-          </div>
-        </section>
-        <section className="big-glassmorphism-card">
-          <div className="container glassmorphism-card flex">
-            
-            <div className="descirp-2 flex">
-              <h4>5v5</h4>
-              <h3>Counter Strike 1.6</h3>
-              <p>
-                Counter-Strike or Counter-Strike 1.6 also known as Half-Life is
-                a series of multiplayer tactical first-person shooter video game
-                in which teams of terrorists battle to perpetrate an act of
-                terror (bombing, hostage-taking, assassination) while
-                counter-terrorists try to prevent it (bomb defusal, hostage
-                rescue, escort mission). The 5v5 multiplayer game contains
-                various maps, skills and strategies. Come show us yours and get
-                the crown.
-              </p>
-            </div>
-            <div className="big-feature-image-2">
-              <img src={CS} alt="" />
+            <div className="row">
+              <div className="descirp-2 flex p-5 col-lg-6 col-sm-12">
+                <h4>Battle Royale</h4>
+                <h3>Battlegrounds Mobile India</h3>
+                <p>
+                  Battlegrounds Mobile India, or BGMI, is a player-versus-player
+                  shooter game, in which, up to 100 players compete in a battle
+                  royale, a type of large-scale last man standing deathmatch. It
+                  is one of the largest mobile eSports in the world. It is a
+                  virtual playground that welcomes you to spawn, loot and take
+                  over the gaming world to gain the first position and have the
+                  opportunity to taste the chicken dinner.
+                </p>
+              </div>
+              <div className="big-feature-image-2 col-lg-6 p-3 col-sm-12">
+                <img src={BGMI} alt="" />
+              </div>
             </div>
           </div>
         </section>
         <section className="big-glassmorphism-card">
           <div className="container glassmorphism-card flex">
-            <div className="big-feature-image">
-              <img src={NFS} alt="" />
+            <div className="row">
+              <div className="big-feature-image col-lg-6 p-3 col-sm-12">
+                <img src={Ball} alt="" />
+              </div>
+              <div className="descirp flex p-5 col-lg-6 col-sm-12">
+                <h4>1v1</h4>
+                <h3>8 Ball Pool</h3>
+                <p>
+                  8 ball pool is one of the most popular and highly addictive
+                  table games which is played professionally all over the world.
+                  It is an addictive challenging game based on real pool games,
+                  where one challenges their friends online and can play in
+                  multiplayer or PvP modes using different balls and table
+                  types. So select your Club and get ready to become the master
+                  of the pool!
+                </p>
+              </div>
             </div>
-            <div className="descirp flex">
-              <h4>1v1</h4>
-              <h3>NFS</h3>
-              <p>
-                Need For Speed (NFS) Most Wanted 2005 is a multiplatform racing
-                game. The game features street racing- oriented gameplay
-                involving selection of events and racing circuits found within
-                the fictional city of Rockport. So come and compete against each
-                other to become the most wanted racer of the city.
-              </p>
+          </div>
+        </section>
+        <section className="big-glassmorphism-card">
+          <div className="container glassmorphism-card flex">
+            <div className="row">
+              <div className="descirp-2 flex p-5 col-lg-6 col-sm-12">
+                <h4>5v5</h4>
+                <h3>Counter Strike 1.6</h3>
+                <p>
+                  Counter-Strike or Counter-Strike 1.6 also known as Half-Life
+                  is a series of multiplayer tactical first-person shooter video
+                  game in which teams of terrorists battle to perpetrate an act
+                  of terror (bombing, hostage-taking, assassination) while
+                  counter-terrorists try to prevent it (bomb defusal, hostage
+                  rescue, escort mission). The 5v5 multiplayer game contains
+                  various maps, skills and strategies. Come show us yours and
+                  get the crown.
+                </p>
+              </div>
+              <div className="big-feature-image-2 col-lg-6 p-3 col-sm-12">
+                <img src={CS} alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="big-glassmorphism-card">
+          <div className="container glassmorphism-card flex">
+            <div className="row">
+              <div className="big-feature-image col-lg-6 p-3 col-sm-12">
+                <img src={NFS} alt="" />
+              </div>
+              <div className="descirp flex p-5 col-lg-6 col-sm-12">
+                <h4>1v1</h4>
+                <h3>Need For Speed</h3>
+                <p>
+                  Need For Speed (NFS) Most Wanted 2005 is a multiplatform
+                  racing game. The game features street racing- oriented
+                  gameplay involving selection of events and racing circuits
+                  found within the fictional city of Rockport. So come and
+                  compete against each other to become the most wanted racer of
+                  the city.
+                </p>
+              </div>
             </div>
           </div>
         </section>

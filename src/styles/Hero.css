@@ -61,59 +61,8 @@ video {
 }
 
 /* Games Cards */
-.big-feature-section {
-  color: white;
-  padding: 20px var(--padding-inline) 0;
-}
-.big-feature-container {
-  height: 25rem;
-  border-top-right-radius: 3em;
-  background-color: white;
-  color: #000000;
-  gap: 20;
-}
-.feature-img {
-  width: 45%;
-  height: 25rem;
-}
-.feature-img img {
-  width: 100%;
-  height: 100%;
-}
-.feature-desc {
-  gap: 10px;
-  width: 55%;
-  padding-inline: var(--padding-inline);
-  flex-direction: column;
-  align-items: flex-start;
-}
-.feature-desc .feature-desc-left h4 {
-  font-size: 1.2em;
-}
-.feature-desc h3 {
-  font-size: 3em;
-}
-.big-feature-container2 {
-  height: 25rem;
-  border-top-left-radius: 3em;
-  background-color: white;
-  color: #000000;
-  gap: 20;
-}
-.feature-desc-left {
-  width: 55%;
-  padding-inline: var(--padding-inline);
-  flex-direction: column;
-  align-items: flex-start;
-}
-.feature-desc-left h4 {
-  font-size: 1.2em;
-}
-.feature-desc-left h3 {
-  font-size: 3em;
-}
 .big-glassmorphism-card {
-  margin-block: 20px;
+  margin-block: 30px;
 }
 .glassmorphism-card {
   background: rgba(255, 255, 255, 0.07);
@@ -122,14 +71,13 @@ video {
   backdrop-filter: blur(1.9px);
   -webkit-backdrop-filter: blur(5.9px);
   border: 1px solid rgba(255, 255, 255, 0.45);
-  height: 25rem;
+  /* height: 25rem; */
   gap: 5px;
 }
-.big-feature-image {
-  margin-inline: 20px;
-  width: 45%;
-  /* border: 1px solid red; */
-  height: 22em;
+
+/* right side */
+.big-feature-image, .big-feature-image-2 {
+  height: calc(100% - 0px);
 }
 .big-feature-image img {
   border-radius: 1em;
@@ -137,11 +85,7 @@ video {
   height: 100%;
 }
 .descirp {
-  margin-right: 20px;
-  /* background-color: white; */
-  height: 22em;
   border-radius: 1em;
-  width: 50%;
   padding-inline: var(--padding-inline);
   justify-content: center;
   align-items: flex-start;
@@ -159,27 +103,23 @@ video {
 }
 .descirp p {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color:bisque
+  font-weight: 400;
+  color:bisque;
+  text-align: justify;
 }
+
+/* left */
 .descirp-2 {
-  margin-left: 20px;
-  /* background-color: white; */
-  height: 22em;
+  /* height: 22em; */
   border-radius: 1em;
-  width: 45%;
   padding-inline: var(--padding-inline);
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   flex-direction: column;
   gap: 15px;
   color:bisque
 }
-.big-feature-image-2 {
-  margin-inline: 20px;
-  width: 50%;
-  height: 22em;
-}
+
 .big-feature-image-2 img {
   border-radius: 1em;
   width: 100%;
@@ -193,8 +133,49 @@ video {
 }
 .descirp-2 p {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color:bisque
+  font-weight: 400;
+  color:bisque;
+  text-align: justify;
+}
+
+@media only screen and (max-width:600px) {
+  .big-glassmorphism-card {
+    margin-block: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .big-feature-image, .big-feature-image-2 {
+    height: 22em;
+  }
+  .big-feature-image img {
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+  }
+  .descirp {
+    height: 22em;
+    border-radius: 1em;
+    padding-inline: var(--padding-inline);
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    color:bisque
+  }
+  .descirp h4 {
+    font-size: 1.2em;
+  }
+  .descirp h3 {
+    font-size: 3em;
+    display: flex;
+    text-align: end;
+  }
+  .descirp p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+
+  
 }
     
 
