@@ -159,7 +159,7 @@ const Hero = () => {
         </div>
               
       </header>
-      {/* <About /> */}
+       <About /> 
       <div>
         <section className="big-glassmorphism-card">
           <div className="container glassmorphism-card flex">
