@@ -178,11 +178,11 @@ video {
   justify-content: center;
 }
 .card {
-  border: 3px solid #1B003D;
+  border: 3px solid #b1a2c3;
   color: rgb(245, 203, 230);
   flex-direction: row;
   gap: 2em;
-  background: #8a09488c;
+  background: #520c97;
   align-items: center;
   padding:8px 9px;
   /* width: 200px; */
