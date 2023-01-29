@@ -183,7 +183,7 @@ const Hero = () => {
               <div className="big-feature-image col-lg-6 p-3 col-sm-12">
                 <img src={Valorant} alt="" />
               </div>
-              <div className="descirp flex p-5 col-lg-6 col-sm-12">
+              <div className="descirp flex p-3 col-lg-6 col-sm-12">
                 <h4>5v5</h4>
                 <h3>Valorant</h3>
                 <p>
@@ -202,9 +202,9 @@ const Hero = () => {
         <section className="big-glassmorphism-card">
           <div className="container glassmorphism-card flex">
             <div className="row">
-              <div className="descirp-2 flex p-5 col-lg-6 col-sm-12">
+              <div className="descirp-2 flex p-3 col-lg-6 col-sm-12">
                 <h4>Battle Royale</h4>
-                <h3>Battlegrounds Mobile India</h3>
+                <h3>BGMI</h3>
                 <p>
                   Battlegrounds Mobile India, or BGMI, is a player-versus-player
                   shooter game, in which, up to 100 players compete in a battle
@@ -227,7 +227,7 @@ const Hero = () => {
               <div className="big-feature-image col-lg-6 p-3 col-sm-12">
                 <img src={Ball} alt="" />
               </div>
-              <div className="descirp flex p-5 col-lg-6 col-sm-12">
+              <div className="descirp flex p-3 col-lg-6 col-sm-12">
                 <h4>1v1</h4>
                 <h3>8 Ball Pool</h3>
                 <p>
@@ -246,7 +246,7 @@ const Hero = () => {
         <section className="big-glassmorphism-card">
           <div className="container glassmorphism-card flex">
             <div className="row">
-              <div className="descirp-2 flex p-5 col-lg-6 col-sm-12">
+              <div className="descirp-2 flex p-3 col-lg-6 col-sm-12">
                 <h4>5v5</h4>
                 <h3>Counter Strike 1.6</h3>
                 <p>
@@ -272,7 +272,7 @@ const Hero = () => {
               <div className="big-feature-image col-lg-6 p-3 col-sm-12">
                 <img src={NFS} alt="" />
               </div>
-              <div className="descirp flex p-5 col-lg-6 col-sm-12">
+              <div className="descirp flex p-3 col-lg-6 col-sm-12">
                 <h4>1v1</h4>
                 <h3>Need For Speed</h3>
                 <p>
