@@ -149,7 +149,6 @@ video {
     height: 100%;
   }
   .descirp, .descirp-2 {
-    height: 22em;
     border-radius: 1em;
     padding-inline: var(--padding-inline);
     justify-content: center;
@@ -158,8 +157,8 @@ video {
     gap: 15px;
     color:bisque
   }
-  .descrip-2 h3{
-    font-size: 2em;
+  .descirp h3 , .descirp-2 h3{
+    font-size: 1.7em;
   }
 
   .big-feature-image, .big-feature-image-2 {
