@@ -27,7 +27,7 @@ const Footer = () => {
             <h3 className="mt-lg-0 mt-sm-4">CONTACT US</h3>
             <p>
             <p><a className='phone' href='tel:98049 58460'><Phone size={20}/> (+91) 123456789 </a></p>
-            <p ><a className="mailto" href="mailto:iic@iemcal.com"><Envelope size={18}/> </a></p>
+            <p ><a className="mailto" href="mailto:versus.iembca@gmail.com"><Envelope size={18}/> versus.iembca@gmail.com</a></p>
             </p>
           </div>
         </div>

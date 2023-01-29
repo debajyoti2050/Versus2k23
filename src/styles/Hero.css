@@ -7,11 +7,8 @@ a {
   text-decoration: none;
 }
 .versus{
-  /* height:200px; */
   width: calc(100% - 900px);
-  margin-bottom: 50px;
-  margin-top: 70px;
-  /* height : 300px; */
+  margin-top: 50px;
 }
 .primary-button {
   border-radius: 3em;
@@ -99,7 +96,6 @@ video {
 .descirp h3 {
   font-size: 3em;
   display: flex;
-  text-align: end;
 }
 .descirp p {
   font-family: "Poppins", sans-serif;
@@ -152,29 +148,25 @@ video {
     width: 100%;
     height: 100%;
   }
-  .descirp {
+  .descirp, .descirp-2 {
     height: 22em;
     border-radius: 1em;
     padding-inline: var(--padding-inline);
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 15px;
     color:bisque
   }
-  .descirp h4 {
-    font-size: 1.2em;
-  }
-  .descirp h3 {
-    font-size: 3em;
-    display: flex;
-    text-align: end;
-  }
-  .descirp p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
+
+  .big-feature-image, .big-feature-image-2 {
+    height: calc(100% - 20px);
   }
 
+  .versus{
+    width: calc(100% - 140px);
+    margin-top: 50px;
+  }
   
 }
     
