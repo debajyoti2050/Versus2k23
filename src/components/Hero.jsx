@@ -175,7 +175,7 @@ const Hero = () => {
           </video>
         </div>
       </header>
-       <About /> 
+       
       <div>
         <section className="big-glassmorphism-card">
           <div className="container glassmorphism-card flex">
