@@ -150,7 +150,7 @@ const Hero = () => {
               type="button"
               class="login-with-google-btn"
             >
-              Sign in with Google
+              Sign In with Google
             </button>
           )}
           {user ? (
@@ -165,7 +165,7 @@ const Hero = () => {
             <source src={BgVideo} type="video/mp4" />
           </video>
         </div>
-              
+      
       </header>
       {/* <About /> */}
       <div>
