@@ -158,6 +158,9 @@ video {
     gap: 15px;
     color:bisque
   }
+  .descrip-2 h3{
+    font-size: 2em;
+  }
 
   .big-feature-image, .big-feature-image-2 {
     height: calc(100% - 20px);
