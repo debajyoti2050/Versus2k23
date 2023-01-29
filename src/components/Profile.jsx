@@ -2,9 +2,12 @@ import React from 'react'
 import '../styles/Profile.css'
 import ProfileIMG from  '../assets/DummyProfileImg.jpg'
 import Background from  '../assets/backgroundimg.jpg'
+import Navbar from './Navbar'
 
 const Profile = () => {
   return (
+    <>
+    <Navbar/>
     <div className="container">
     
       <img className="backgroundimg" src={Background} alt=''/>
@@ -28,6 +31,7 @@ const Profile = () => {
       <p className="games">NFS</p>
       <p className="games">COD</p>
     </div>
+    </>
   )
 }
 
