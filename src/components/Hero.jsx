@@ -3,6 +3,7 @@ import About from "./About";
 import "../styles/Hero.css";
 import "../styles/hero.scss";
 import BgVideo from "../assets/bg.mp4";
+import BGMI from "../assets/bgmi.png"
 import {
   GoogleAuthProvider,
   onAuthStateChanged,
@@ -62,7 +63,7 @@ const Hero = () => {
                 gradientTransform="matrix(1, 0, 0, 1, 0, 0)"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#fff" />
+                <stop offset="0" stop-color="#eee7d9" />
                 <stop offset=".06" stop-color="#eee7d9" />
                 <stop offset=".16" stop-color="#eee7d9" />
                 <stop offset=".26" stop-color="#eee7d9" />
@@ -70,8 +71,8 @@ const Hero = () => {
                 <stop offset=".46" stop-color="#eee7d9" />
                 <stop offset=".58" stop-color="#eee7d9" />
                 <stop offset=".7" stop-color="#eee7d9" />
-                <stop offset=".83" stop-color="#ffffff" />
-                <stop offset="1" stop-color="#ffffff" />
+                <stop offset=".83" stop-color="#eee7d9" />
+                <stop offset="1" stop-color="#eee7d9" />
               </linearGradient>
               <linearGradient
                 id="linear-gradient-2"
@@ -199,7 +200,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="big-feature-image-2">
-              <img src="images/pes.jpg" alt="" />
+              <img src={BGMI} alt="" />
             </div>
           </div>
         </section>
