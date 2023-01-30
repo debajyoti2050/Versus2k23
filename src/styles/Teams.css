@@ -1,0 +1,28 @@
+.heading{
+    text-align: center;
+}
+.team-image{
+/* border-radius:50%; */
+/* border: 4px solid black; */
+}
+
+.card{
+    border-radius: 4%;
+    display: block;
+    text-align: center;
+}
+.card:hover{
+    /* transform: scale(1.1); */
+    transition: all 0.3s ease-in-out; 
+    transform: scale(1.1); 
+}
+.card-body{
+    padding:0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .team-image{
+        width: 15rem;
+        height: 15rem;
+    }
+}
