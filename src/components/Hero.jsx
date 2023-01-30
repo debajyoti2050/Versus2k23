@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import About from "./About";
 import "../styles/Hero.css";
 import "../styles/hero.scss";
+import Logo from '../assets/logo_gold.png'
 import BgVideo from "../assets/bg.mp4";
 import BGMI from "../assets/bgmi.jpg";
 import Valorant from "../assets/valorant_web.jpg";
@@ -175,7 +176,7 @@ const Hero = () => {
             </button>
           )}
           {/* <button onClick={handleGoogleSignIn} className="primary-button">Register Now</button> */}
-          <video className="video-bg" autoPlay loop muted>
+          <video poster={Logo} className="video-bg" autoPlay loop muted>
             <source src={BgVideo} type="video/mp4" />
           </video>
         </div>
