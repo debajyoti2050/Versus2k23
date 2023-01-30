@@ -153,7 +153,7 @@ const Hero = () => {
             <>
               <div className="flex">
                 <a href="/profile" className="profile-button">
-                  <div className="card flex">
+                  <div className="prof-but flex">
                     <img src={user?.photoURL} className="profile-img" alt="" />
                     <div className="info">
                       <h1>

@@ -177,12 +177,23 @@ video {
   align-items: center;
   justify-content: center;
 }
-.card {
-  border: 3px solid #b1a2c3;
+.prof-but {
   color: rgb(245, 203, 230);
   flex-direction: row;
-  gap: 2em;
-  background: #520c97;
+  gap: 1.5em;
+  font-size:15px;
+  font-family:Arial;
+  border-width:0px;
+  color:#fff;
+  border-color:rgba(245, 173, 242, 1);
+  
+  border-top-left-radius:13px;
+  border-top-right-radius:13px;
+  border-bottom-left-radius:13px;
+  border-bottom-right-radius:13px;
+  /* box-shadow: 13px 15px 37px -7px rgb(197, 174, 203); */
+  text-shadow: 0px -4px 8px rgb(29, 2, 35);
+  background:linear-gradient(rgb(113, 30, 192), rgb(62, 10, 115));
   align-items: center;
   padding:8px 9px;
   /* width: 200px; */
@@ -201,9 +212,9 @@ video {
 .info h1 {
   font-size: 25px;
   font-family: "Russo One", sans-serif;
-  font-weight: 500;
+  font-weight:bold;
 }
-.card:hover {
-  background-color: #1B003D;
+.prof-but:hover {
+  background: linear-gradient(rgb(62, 10, 115), rgb(113, 30, 192));
   color: white;
 }
