@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import '../styles/Teams.css'
 import React from 'react'
 import Navbar from '../components/Navbar'
