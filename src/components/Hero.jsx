@@ -181,8 +181,11 @@ const Hero = () => {
           </video>
         </div>
       </header>
-       
-      <div>
+
+      {/* About */}
+      <About/>
+       {/* Games Available */}
+      <div id="games">
         <section className="big-glassmorphism-card">
           <div className="container glassmorphism-card flex">
             <div className="row">

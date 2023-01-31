@@ -1,0 +1,27 @@
+#about{
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+    .abt-heading{
+        position: relative;
+        // .overlay-text{
+        //     position: absolute;
+        // }
+        h1{
+            color: beige;
+            font-weight: 500;
+        }
+    }
+    .abt-img{
+        height: calc(100% - 0px);
+        img{
+            height:25rem;
+        }
+    }
+    .abt-writeup{
+        color:aquamarine;
+    }
+}
