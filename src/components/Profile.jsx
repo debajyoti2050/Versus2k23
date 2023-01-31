@@ -6,6 +6,8 @@ import Navbar from "./Navbar";
 import { onAuthStateChanged, signOut } from "@firebase/auth";
 import { auth } from "../firebase";
 import { Navigate, useNavigate } from "react-router";
+import cover from '../assets/Cover.png'
+import Footer from '../components/Footer'
 
 const Profile = () => {
   const [user, setUser] = useState(null);
@@ -34,7 +36,7 @@ const Profile = () => {
     <>
       <Navbar />
       <div className="container">
-        <img className="backgroundimg" src={Background} alt="" />
+        <img className="backgroundimg" src={cover} alt="" />
         <div className="details mt-4">
           <div className="row">
             <div className="col-lg-3 col-md-6">
@@ -45,11 +47,10 @@ const Profile = () => {
               )}
             </div>
             <div className="detailsText col-lg-3 col-md-6">
-              <h4>{user?.displayName}</h4>
-              <p>{user?.email}</p>
-              <p>9876543210</p>
+              <h1>{user?.displayName}</h1>
+              <h5>{user?.email}</h5>
               {user ? (
-            <button onClick={() => signOut(auth)} className="primary-button">
+            <button onClick={() => signOut(auth)} className="primary-button mt-3">
               Sign Out
             </button>
           ) : (
@@ -58,14 +59,31 @@ const Profile = () => {
             </div>
           </div>
         </div>
+        <h2 className="heading mt-4 mb-4">MY GAMES</h2>
+        <div className="row">
+          <div className="col-lg-4">
+          <p className="games"><p className="mt-3">VALORANT</p></p>
+          </div>
 
-        <h3 className="heading mt-4 mb-4">MY GAMES</h3>
-        <p className="games">VALORANT</p>
-        <p className="games">BGMI</p>
-        <p className="games">8 BALL POOL</p>
-        <p className="games">NFS</p>
-        <p className="games">COD</p>
+          <div className="col-lg-4">
+          <p className="games"><p className="mt-3">BGMI</p></p>
+          </div>
+
+          <div className="col-lg-4">
+          <p className="games"><p className="mt-3">8 BALL POOL</p></p>
+          </div>
+
+          <div className="col-lg-4">
+          <p className="games"><p className="mt-3">NFS</p></p>
+          </div>
+
+          <div className="col-lg-4">
+          <p className="games"><p className="mt-3">COD</p></p>
+          </div>
+        </div>
+        <h1 className="endText mt-5 mb-5">Thank You for Registering!!</h1>
       </div>
+      <Footer/>
     </>
   );
 };
