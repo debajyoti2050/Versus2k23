@@ -6,8 +6,11 @@
   }
  .abt-img {
     height: calc(100% - 0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
-      height: 25rem;
+      height: 35rem;
     }
   }
   .abt-writeup {
