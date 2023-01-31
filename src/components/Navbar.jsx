@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import Logo from "../assets/logo.png";
 import IEM from "../assets/logo_white.png";
@@ -18,35 +18,35 @@ const Navbar = () => {
         />
         <nav className="navbar" onClick={(e) => e.stopPropagation()}>
           <div className="nav-container">
-            <NavLink exact to="/" className="nav-logo">
+            <Link exact to="/" className="nav-logo">
               <img src={IEM} alt="logo" />
               <img src={Logo} className="mx-3" alt="logo" />
-            </NavLink>
+            </Link>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
-                <NavLink
-                  exact
+                <Link
+                  
                   to="/"
                   activeClassName="active"
                   className="nav-links"
                   onClick={click ? handleClick : null}
                 >
                   Home
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/about"
+                <Link
+                  
+                  to="#about"
                   activeClassName="active"
                   className="nav-links"
                   onClick={click ? handleClick : null}
                 >
                   About
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink
+                <Link
                   exact
                   to="/blog"
                   activeClassName="active"
@@ -54,10 +54,21 @@ const Navbar = () => {
                   onClick={click ? handleClick : null}
                 >
                   Contact
-                </NavLink>
+                </Link>
               </li>
               <li className="nav-item">
-                <NavLink
+                <Link
+                  exact
+                  to="#games"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={click ? handleClick : null}
+                >
+                  Games
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
                   exact
                   to="/profile"
                   activeClassName="active"
@@ -65,11 +76,11 @@ const Navbar = () => {
                   onClick={click ? handleClick : null}
                 >
                   Profile
-                </NavLink>
+                </Link>
               </li>
             </ul>
             <div className="nav-icon" onClick={handleClick}>
-              <i className={click ? "bi bi-x-octagon" : "bi bi-list-ul"}></i>
+              <i className={click ? "bi bi-x-octagon" : "bi bi-list"}></i>
             </div>
           </div>
         </nav>

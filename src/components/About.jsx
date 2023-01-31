@@ -15,7 +15,7 @@ export default function About() {
             <div className="abt-img col-lg-6">
               <img src={aboutus} alt="" />
             </div>
-            <div className="abt-writeup col-lg-6 px-sm-5">
+            <div className="abt-writeup col-lg-6">
               Institute of Engineering & Management brings to you Versus -
               organized by the Department of Computer Science & Application.
               <br/>

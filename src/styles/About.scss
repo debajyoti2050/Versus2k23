@@ -23,3 +23,18 @@
     justify-content: center;
   }
 }
+@media only screen and (max-width:600px) {
+  #about {
+    .abt-img {
+      margin-bottom: 15px;
+      img {
+        height: 25rem;
+      }
+    }
+    .abt-writeup {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+
+}
