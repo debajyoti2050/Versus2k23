@@ -30,7 +30,7 @@ const Hero = () => {
         console.log(result);
         try {
           const { data } = await axios.post(
-            "https://versus2k23-backend.onrender.com/api/v1/registerUser",
+            "https://versus-event.herokuapp.com/api/v1/registerUser",
             { name: result.user.displayName, email: result.user.email }
           );
           console.log(data);
@@ -159,14 +159,17 @@ const Hero = () => {
                     <div className="info">
                       <h1>
                         Profile&nbsp;
-                        <i class="bi bi-arrow-up-right"></i>
+                        <i className="bi bi-arrow-up-right"></i>
                       </h1>
                     </div>
                   </div>
                 </a>
               </div>
+              <br></br>
+              <h5 className="pt-5" style={{color:'red'}}>*Registration Starts on 5th Feb*</h5>
             </>
           ) : (
+            <>
             <button
               onClick={handleGoogleSignIn}
               type="button"
@@ -174,6 +177,8 @@ const Hero = () => {
             >
               Sign In with Google
             </button>
+           
+            </>
           )}
           {/* <button onClick={handleGoogleSignIn} className="primary-button">Register Now</button> */}
           <video poster={Logo} className="video-bg" autoPlay loop muted>
