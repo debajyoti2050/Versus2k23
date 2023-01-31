@@ -16,22 +16,17 @@ export default function About() {
               <img src={versus} alt="" />
             </div>
             <div className="abt-writeup col-lg-6">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-              cumque dignissimos ipsam consequuntur consectetur, voluptate quas.
-              Suscipit consequatur sint minima labore nihil distinctio nulla,
-              officiis, quasi magnam eaque voluptas laborum. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Cum corporis, nihil totam
-              error fugiat quae! Consequatur, sed adipisci. Sunt laboriosam
-              nisi, dolores quos odit facilis autem possimus obcaecati
-              asperiores veniam! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Sit itaque excepturi, ex voluptatum asperiores
-              aspernatur provident laborum? Rerum modi tempora voluptatem enim
-              error vitae, dolorem expedita ex veritatis aperiam nesciunt? Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Impedit, velit.
-              Quisquam animi consequuntur voluptate, excepturi hic iste
-              repellendus ut voluptatibus voluptatum corrupti sint doloribus.
-              Maxime, architecto ipsa! Vero, quasi placeat? Lorem ipsum dolor
-              sit amet consectetur adipisicing elit.
+              Institute of Engineering & Management brings to you Versus -
+              organized by the Department of Computer Science & Application.
+              <br/>
+              "VERSUS" is a Mega gaming event inviting gamers of all kind to
+              showcase their skills in both PC as well as mobile games,
+              including Valorant, CS 1.6, NFS, 8 Ball Pool With Versus, our
+              vision is to garner a specific appeal for gaming via this platform
+              . We have all the elements that makes it engaging and powerful -
+              from strategy to mind games to camaraderie to thrills to
+              risk-taking and much more. The long needed gaming community
+              finally getting its' own deserving platform at Versus 2k23.
             </div>
           </div>
         </div>
