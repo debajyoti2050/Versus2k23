@@ -25,7 +25,7 @@ const Profile = () => {
       }
       
       const {data} =await axios.post('https://versus-event.herokuapp.com/api/v1/getUserByEmail',{email:user?.email},{headers})
-      console.log(data);
+      // console.log(data);
       setUid(data)
     }
     
@@ -41,7 +41,7 @@ const Profile = () => {
         const newURL="s400-c";
         const path = photoURL?.toString()
         const newPhotoURL=path?.replace(originalURL,newURL);
-        console.log(newPhotoURL);
+        // console.log(newPhotoURL);
         setUpdatedPhotoURL(newPhotoURL);
         userUID();
         
@@ -49,7 +49,7 @@ const Profile = () => {
         setUser(null);
         navigate('/')
       }
-      console.log(user);
+      // console.log(user);
     });
   }, [navigate, photoURL, user,]);
   return (
