@@ -1,27 +1,16 @@
-#about{
-    .flex {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    
-    .abt-heading{
-        position: relative;
-        // .overlay-text{
-        //     position: absolute;
-        // }
-        h1{
-            color: beige;
-            font-weight: 500;
-        }
+#about {
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ .abt-img {
+    height: calc(100% - 0px);
+    img {
+      height: 25rem;
     }
-    .abt-img{
-        height: calc(100% - 0px);
-        img{
-            height:25rem;
-        }
-    }
-    .abt-writeup{
-        color:aquamarine;
-    }
+  }
+  .abt-writeup {
+    color: aquamarine;
+  }
 }

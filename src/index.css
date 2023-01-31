@@ -7,11 +7,50 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background: rgb(92,5,131);
 background: linear-gradient(90deg, rgba(92,5,131,0.9888844384087456) 33%, rgba(2,74,163,1) 87%);   */
-background: rgb(28,0,62);
-background: linear-gradient(140deg, rgba(28,0,62,1) 43%, rgba(85,27,190,1) 68%, rgba(13,36,121,1) 100%);
+  background: rgb(28, 0, 62);
+  background: linear-gradient(
+    140deg,
+    rgba(28, 0, 62, 1) 43%,
+    rgba(85, 27, 190, 1) 68%,
+    rgba(13, 36, 121, 1) 100%
+  );
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.section-heading h1 {
+  color: beige;
+  font-weight: 500;
+  font-size: 35px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.section-heading h1::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: calc(100% - 25%);
+  height: 1px;
+  background: rgb(170, 170, 170);
+  bottom: -3px;
+  left: calc(13% - 0px);
+}
+.section-heading h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: calc(100% - 50%);
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(72, 0, 252, 1) 18%,
+    rgba(211, 3, 247, 1) 82%
+  );
+  bottom: -4px;
+  left: calc(25% - 0px);
 }

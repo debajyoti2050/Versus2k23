@@ -1,6 +1,7 @@
 .flex {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 a {
   display: inline-block;
@@ -217,4 +218,5 @@ video {
 .prof-but:hover {
   background: linear-gradient(rgb(62, 10, 115), rgb(113, 30, 192));
   color: white;
+  transition: all 0.3s ease-in-out; 
 }

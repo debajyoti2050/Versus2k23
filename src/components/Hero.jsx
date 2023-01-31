@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import About from "./About";
 import "../styles/Hero.css";
 import "../styles/hero.scss";
-import Logo from '../assets/logo_gold.png'
+import Logo from "../assets/logo_gold.png";
 import BgVideo from "../assets/bg.mp4";
 import BGMI from "../assets/bgmi.jpg";
 import Valorant from "../assets/valorant_web.jpg";
@@ -183,9 +183,12 @@ const Hero = () => {
       </header>
 
       {/* About */}
-      <About/>
-       {/* Games Available */}
-      <div id="games">
+      <About />
+      {/* Games Available */}
+      <section id="games" className="pt-5">
+        <div className="section-heading flex">
+          <h1>Games</h1>
+        </div>
         <section className="big-glassmorphism-card">
           <div className="container glassmorphism-card flex">
             <div className="row">
@@ -296,7 +299,7 @@ const Hero = () => {
             </div>
           </div>
         </section>
-      </div>
+      </section>
 
       {/* <About/> */}
     </>
