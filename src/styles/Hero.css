@@ -11,7 +11,8 @@ a {
   width: calc(100% - 900px);
   margin-top: 50px;
 }
-.primary-button {
+
+/* .primary-button {
   border-radius: 3em;
   background-color: red;
   color: white;
@@ -21,7 +22,7 @@ a {
 .primary-button:hover {
   background-color: rgb(173, 30, 144);
   color: white;
-}
+} */
 .hero-video {
   justify-content: center;
   align-items: center;
