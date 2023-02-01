@@ -66,7 +66,7 @@ const Navbar = () => {
                   Games
                 </a>
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <a
                   href="/teams"
                   activeClassName="active"
@@ -75,7 +75,7 @@ const Navbar = () => {
                 >
                   Teams
                 </a>
-              </li> */}
+              </li>
               <li className="nav-item">
                 <Link
                   
