@@ -26,8 +26,9 @@ const Footer = () => {
           <div className="col-lg-3 col-xs-12 contact" style={{textAlign:"center"}}>
             <h3 className="mt-lg-0 mt-sm-4">CONTACT US</h3>
             <p>
-            <p><a className='phone' href='tel:8240645680'><Phone size={20}/>8240645680 (Avishek Sharma) </a></p>
-            <p><a className='phone' href='tel:7439477838'><Phone size={20}/>7439477838 (Srija Karmakar) </a></p>
+            <p><a className='phone' href='tel:8240645680'><Phone size={20}/>8240645680 (Avishek) </a></p>
+            <p><a className='phone' href='tel:7439477838'><Phone size={20}/>7439477838 (Srija) </a></p>
+            <p><a className='phone' href='tel:7595022364'><Phone size={20}/>7595022364 (Poushali) </a></p>
             <p ><a className="mailto" href="mailto:versus.iembca@gmail.com"><Envelope size={18}/> versus.iembca@gmail.com</a></p>
             </p>
           </div>
