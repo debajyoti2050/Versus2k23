@@ -27,13 +27,13 @@ const Hero = () => {
     const googleProvider = new GoogleAuthProvider();
     signInWithPopup(auth, googleProvider)
       .then(async (result) => {
-        console.log(result);
+        // console.log(result);
         try {
           const { data } = await axios.post(
             "https://versus-event.herokuapp.com/api/v1/registerUser",
             { name: result.user.displayName, email: result.user.email }
           );
-          console.log(data);
+          // console.log(data);
         } catch (err) {
           console.log(err);
         }

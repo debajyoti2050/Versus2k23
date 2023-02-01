@@ -81,7 +81,7 @@ const Profile = () => {
           </div>
         </div>
         <h2 className="heading mt-4 mb-4">MY GAMES</h2>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-lg-4">
           <p className="games"><p className="mt-3">VALORANT</p></p>
           </div>
@@ -101,8 +101,10 @@ const Profile = () => {
           <div className="col-lg-4">
           <p className="games"><p className="mt-3">COD</p></p>
           </div>
-        </div>
-        <h1 className="endText mt-5 mb-5">Thank You for Registering!!</h1>
+        </div> */}
+        {/* <h1 className="endText mt-5 mb-5">Thank You for Registering!!</h1> */}
+        <h1 className="endText mt-5 mb-5">No Games Enrolled</h1>
+        <h5 className="endText mt-7 pt-5 mb-5" style={{color:'red'}}>*Your Enrolled Games Will Appear Here after Registration*</h5>
       </div>
       <Footer/>
     </>
