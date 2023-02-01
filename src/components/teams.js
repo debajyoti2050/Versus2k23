@@ -209,7 +209,7 @@ export const website = [
           id: 2,
           name: "Pritam",
           surname: "Das",
-          image: "",
+          image: "./team/website/pritam.jpg",
           team: "Website Team"
      },
      {
@@ -223,7 +223,7 @@ export const website = [
           id: 4,
           name: "Arijit",
           surname: "Das",
-          image: "",
+          image: "./team/website/Arijit.jpg",
           team: "Website Team"
      },
      {
@@ -292,8 +292,8 @@ export const game = [
      // },
      {
           id: 6,
-          name: "Pradipta",
-          surname: "Shankar",
+          name: "Pradipta Shankar",
+          surname: "Bramhachary",
           image: "./team/gaming/pradipta.jpg",
           game:"Valorant",
           team: "Gaming Coordinators"
