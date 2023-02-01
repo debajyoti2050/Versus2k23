@@ -1,13 +1,18 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import "../styles/Teams.css";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import person1 from "../assets/TeamImg.jpg";
 import Footer from "../components/Footer";
 
 import { accounts,game,graphics,faculty,core,marketing, website } from "../components/teams";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Teams = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  },[]);
   return (
     <>
       <Navbar />
@@ -42,12 +47,12 @@ const Teams = () => {
 
       <h1 className="heading mt-5">CORE COMMITTEE</h1>
       <div className="container">
-        <div className="row">
+        <div className="row" >
           {
             core.map((cores) => {
               return(
-                <div className="col-lg-3 col-md-6" key={cores.id}>
-            <div className="card shadow mt-5 p-4">
+                <div className="col-lg-3 col-md-6" key={cores.id} >
+            <div className="card shadow mt-5 p-4" data-aos="fade-up" data-aos-duration="1500">
               <img
                 className="card-img-top team-image rounded-circle"
                 src={cores.image}
@@ -78,7 +83,7 @@ const Teams = () => {
             website.map((websites) => {
               return(
                 <div className="col-lg-3 col-md-6" key={websites.id}>
-                <div className="card shadow mt-5 p-4">
+                <div className="card shadow mt-5 p-4" data-aos="fade-up" data-aos-duration="1500">
                   <img
                     className="card-img-top team-image rounded-circle"
                     src={websites.image}
@@ -107,7 +112,7 @@ const Teams = () => {
             marketing.map((marketings) => {
               return(
                 <div className="col-lg-3 col-md-6 " key={marketings.id}>
-            <div className="card shadow mt-5 p-4">
+            <div className="card shadow mt-5 p-4" data-aos="fade-up" data-aos-duration="1500">
               <img
                 className="card-img-top team-image rounded-circle"
                 src={marketings.image}
@@ -137,7 +142,7 @@ const Teams = () => {
             return(
               
               <div className="col-lg-3 col-md-6" key={account.id}>
-            <div className="card shadow mt-5 p-4">
+            <div className="card shadow mt-5 p-4" data-aos="fade-up" data-aos-duration="1500">
               <img
                 className="card-img-top team-image rounded-circle"
                 src={account.image}
@@ -166,7 +171,7 @@ const Teams = () => {
           {graphics.map((graphic) => {
               return(
                 <div className="col-lg-3 col-md-6" key={graphic.id}>
-            <div className="card shadow mt-5 p-4">
+            <div className="card shadow mt-5 p-4" data-aos="fade-up" data-aos-duration="1500">
               <img
                 className="card-img-top team-image rounded-circle"
                 src={graphic.image}
@@ -196,7 +201,7 @@ const Teams = () => {
           {game.map((game) => {
             return(
               <div className="col-lg-3 col-md-6" key={game.id}>
-            <div className="card shadow mt-5 p-4">
+            <div className="card shadow mt-5 p-4" data-aos="fade-up" data-aos-duration="1500">
               <img
                 className="card-img-top team-image rounded-circle"
                 src={game.image}
