@@ -28,7 +28,7 @@ const Footer = () => {
             <p>
             <p><a className='phone' href='tel:8240645680'><Phone size={20}/>8240645680 (Avishek) </a></p>
             <p><a className='phone' href='tel:7439477838'><Phone size={20}/>7439477838 (Srija) </a></p>
-            <p><a className='phone' href='tel:7595022364'><Phone size={20}/>7595022364 (Poushali) </a></p>
+            <p><a className='phone' href='tel:7595022364'><Phone size={20}/>7595022364 (Pousali) </a></p>
             <p ><a className="mailto" href="mailto:versus.iembca@gmail.com"><Envelope size={18}/> versus.iembca@gmail.com</a></p>
             </p>
           </div>
