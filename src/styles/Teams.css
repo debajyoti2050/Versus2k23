@@ -1,3 +1,7 @@
+#team{
+  background: #1C003E;
+  padding: 5rem 0;
+}
 .row{
   display: flex;
   justify-content: center;

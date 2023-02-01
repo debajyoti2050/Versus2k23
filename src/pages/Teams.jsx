@@ -11,7 +11,8 @@ const Teams = () => {
   return (
     <>
       <Navbar />
-      <h1 className="heading mt-5">FACULTY COORDINATORS</h1>
+      <section id="team">
+      {/* <h1 className="heading">FACULTY COORDINATORS</h1>
       <div className="container">
         <div className="row">
           {
@@ -29,7 +30,6 @@ const Teams = () => {
                   <h3 className="text-center mt-3">{faculties.name}</h3>
                   <h3 className="text-center">{faculties.surname}</h3>
                   <h5 className="text-center mt-1">{faculties.team}</h5>
-                  {/* <p className="text-center mt-2">9876543210</p> */}
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@ const Teams = () => {
               )
           }
         </div>
-      </div>
+      </div> */}
 
       <h1 className="heading mt-5">CORE COMMITTEE</h1>
       <div className="container">
@@ -218,6 +218,7 @@ const Teams = () => {
           
         </div>
       </div>
+      </section>
       <Footer />
     </>
   );
