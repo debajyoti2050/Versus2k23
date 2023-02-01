@@ -25,48 +25,48 @@ export const faculty = [
      }
 ]
 export const core = [
-     {
-          id: 1,
-          name: "Avishek",
-          surname: "Sharma",
-          image: "",
-          team: "Core Committee"
-     },
+     // {
+     //      id: 1,
+     //      name: "Avishek",
+     //      surname: "Sharma",
+     //      image: "",
+     //      team: "Core Committee"
+     // },
      {
           id: 2,
           name: "Srija",
           surname: " Karmakar",
-          image: "",
+          image: "./team/accounts-team/srija.jpg",
           team: "Core Committee"
      },
      {
           id: 3,
           name: "Pousali",
           surname: "Chakraborty",
-          image: "",
+          image: "./team/marketing/pousali.jpg",
           team: "Core Committee"
      },
-     {
-          id: 4,
-          name: "Kushagra",
-          surname: "Choudhury",
-          image: "",
-          team: "Core Committee"
-     },
+     // {
+     //      id: 4,
+     //      name: "Kushagra",
+     //      surname: "Choudhury",
+     //      image: "",
+     //      team: "Core Committee"
+     // },
      {
           id: 5,
           name: "Rapti",
           surname: "Chatterjee",
-          image: "",
+          image: "./team/accounts-team/rapti.jpg",
           team: "Core Committee"
      },
-     {
-          id: 6,
-          name: "Arghajit",
-          surname: "Singha Roy",
-          image: "",
-          team: "Core Committee"
-     }
+     // {
+     //      id: 6,
+     //      name: "Arghajit",
+     //      surname: "Singha Roy",
+     //      image: "",
+     //      team: "Core Committee"
+     // }
 
 ]
 export const marketing = [
@@ -74,51 +74,51 @@ export const marketing = [
           id: 1,
           name: "Pousali",
           surname: "Chakraborty",
-          image: "",
+          image: "./team/marketing/pousali.jpg",
           team: "Marketing Team"
      },
-     {
-          id: 2,
-          name: "Arghajit",
-          surname: "Singha Roy",
-          image: "",
-          team: "Marketing Team"
-     },
-     {
-          id: 3,
-          name: "Ankita",
-          surname: "De",
-          image: "",
-          team: "Marketing Team"
-     },
+     // {
+     //      id: 2,
+     //      name: "Arghajit",
+     //      surname: "Singha Roy",
+     //      image: "",
+     //      team: "Marketing Team"
+     // },
+     // {
+     //      id: 3,
+     //      name: "Ankita",
+     //      surname: "De",
+     //      image: "",
+     //      team: "Marketing Team"
+     // },
      {
           id: 4,
           name: "Ankita",
           surname: "Saha",
-          image: "",
+          image: "./team/marketing/ankita-saha.jpg",
           team: "Marketing Team"
      },
      {
           id: 5,
           name: "Parimita",
           surname: "Sarkar",
-          image: "",
+          image: "./team/marketing/parimita.jpg",
           team: "Marketing Team"
      },
      {
           id: 6,
           name: "Ishita",
           surname: "Biswas",
-          image: "",
+          image: "./team/marketing/ishita-biswas.jpg",
           team: "Marketing Team"
      },
-     {
-          id: 7,
-          name: "Prabhleen",
-          surname: "Kaur Arora",
-          image: "",
-          team: "Marketing Team"
-     }
+     // {
+     //      id: 7,
+     //      name: "Prabhleen",
+     //      surname: "Kaur Arora",
+     //      image: "",
+     //      team: "Marketing Team"
+     // }
 
 ]
 export const accounts = [
@@ -126,73 +126,73 @@ export const accounts = [
           id: 1,
           name: "Srija",
           surname: " Karmakar",
-          image: "",
+          image: "./team/accounts-team/srija.jpg",
           team: "Accounts team"
      },
      {
           id: 2,
           name: "Rapti",
           surname: "Chatterjee",
-          image: "",
+          image: "./team/accounts-team/rapti.jpg",
           team: "Accounts team"
      },
      {
           id: 3,
           name: "Kushagra",
           surname: "Choudhury",
-          image: "",
+          image: "./team/accounts-team/kushagra.jpg",
           team: "Accounts team"
      },
      {
           id: 4,
           name: "Achinta",
           surname: "Mukherjee",
-          image: "",
+          image: "./team/accounts-team/achinta.jpg",
           team: "Accounts team"
      },
      {
           id: 5,
           name: "Rohan",
           surname: "Roy",
-          image: "",
+          image: "./team/accounts-team/rohan-roy.jpg",
           team: "Accounts team"
      }
 
 ]
 export const graphics = [
-     {
-          id: 1,
-          name: "Swarup",
-          surname: "Paul",
-          image: "",
-          team: "Graphics team"
-     },
-     {
-          id: 2,
-          name: "Dipayan",
-          surname: "Banik",
-          image: "",
-          team: "Graphics team"
-     },
+     // {
+     //      id: 1,
+     //      name: "Swarup",
+     //      surname: "Paul",
+     //      image: "",
+     //      team: "Graphics team"
+     // },
+     // {
+     //      id: 2,
+     //      name: "Dipayan",
+     //      surname: "Banik",
+     //      image: "",
+     //      team: "Graphics team"
+     // },
      {
           id: 3,
           name: "Suddhaswatta",
           surname: "Bhattacharjee",
-          image: "",
+          image: "./team/graphics/suddha.jpg",
           team: "Graphics team"
      },
-     {
-          id: 4,
-          name: "Debshankar",
-          surname: "Saha",
-          image: "",
-          team: "Graphics team"
-     },
+     // {
+     //      id: 4,
+     //      name: "Debshankar",
+     //      surname: "Saha",
+     //      image: "",
+     //      team: "Graphics team"
+     // },
      {
           id: 5,
           name: "Snehal",
           surname: "Sarkar",
-          image: "",
+          image: "./team/graphics/snehal.jpg",
           team: "Graphics team"
      }
 
@@ -202,7 +202,7 @@ export const website = [
           id: 1,
           name: "Debajyoti",
           surname: "Bhattacharjee",
-          image: "",
+          image: "./team/website/debajyoti.jpg",
           team: "Website Team"
      },
      {
@@ -250,67 +250,67 @@ export const website = [
 
 ]
 export const game = [
-     {
-          id: 1,
-          name: "Arindam",
-          surname: "Mondal",
-          image: "",
-          game:"BGMI",
-          team: "Gaming Coordinators"
-     },
-     {
-          id: 2,
-          name: "Sayantan",
-          surname: "Ghosh",
-          image: "",
-          game:"BGMI",
-          team: "Gaming Coordinators"
-     },
+     // {
+     //      id: 1,
+     //      name: "Arindam",
+     //      surname: "Mondal",
+     //      image: "",
+     //      game:"BGMI",
+     //      team: "Gaming Coordinators"
+     // },
+     // {
+     //      id: 2,
+     //      name: "Sayantan",
+     //      surname: "Ghosh",
+     //      image: "",
+     //      game:"BGMI",
+     //      team: "Gaming Coordinators"
+     // },
      {
           id: 3,
           name: "Nirmalya",
           surname: "Shit",
-          image: "",
+          image: "./team/gaming/nirmalya.jpg",
           game:"BGMI",
           team: "Gaming Coordinators"
      },
-     {
-          id: 4,
-          name: "Dipayan",
-          surname: "Banik",
-          image: "",
-          game:"Valorant",
-          team: "Gaming Coordinators"
-     },
-     {
-          id: 5,
-          name: "Soham",
-          surname: "Basu",
-          image: "",
-          game:"Valorant",
-          team: "Gaming Coordinators"
-     },
+     // {
+     //      id: 4,
+     //      name: "Dipayan",
+     //      surname: "Banik",
+     //      image: "",
+     //      game:"Valorant",
+     //      team: "Gaming Coordinators"
+     // },
+     // {
+     //      id: 5,
+     //      name: "Soham",
+     //      surname: "Basu",
+     //      image: "",
+     //      game:"Valorant",
+     //      team: "Gaming Coordinators"
+     // },
      {
           id: 6,
           name: "Pradipta",
           surname: "Shankar Bramhachary",
-          image: "",
+          image: "./team/gaming/pradipta.jpg",
           game:"Valorant",
           team: "Gaming Coordinators"
      },
-     {
-          id: 7,
-          name: "Ankush",
-          surname: "Ghosh",
-          image: "",
-          game:"CS 1.6",
-          team: "Gaming Coordinators"
-     },
+     // {
+     //      id: 7,
+     //      name: "Ankush",
+     //      surname: "Ghosh",
+     //      image: "",
+     //      game:"CS 1.6",
+     //      team: "Gaming Coordinators"
+     // },
      {
           id: 8,
           name: "Avay",
           surname: "Kumar Shaw",
-          image: "",
+          image: "./team/gaming/avay.jpg",
           game:"CS 1.6",
           team: "Gaming Coordinators"
      },
@@ -318,7 +318,7 @@ export const game = [
           id: 9,
           name: "Kingsukh",
           surname: "Das",
-          image: "",
+          image: "./team/gaming/kingshuk.jpg",
           game:"NFS",
           team: "Gaming Coordinators"
      },
@@ -326,25 +326,25 @@ export const game = [
           id: 10,
           name: "Tamojit",
           surname: "Mohanta",
-          image: "",
+          image: "./team/gaming/tamojit.jpg",
           game:"NFS",
           team: "Gaming Coordinators"
      },
-     {
-          id: 11,
-          name: "Subhranil",
-          surname: "Paul",
-          image: "",
-          game:"8 Ball Pool",
-          team: "Gaming Coordinators"
-     },
-     {
-          id: 12,
-          name: "Aishi",
-          surname: "Mitra",
-          image: "",
-          game:"8 Ball Pool",
-          team: "Gaming Coordinators"
-     }
+     // {
+     //      id: 11,
+     //      name: "Subhranil",
+     //      surname: "Paul",
+     //      image: "",
+     //      game:"8 Ball Pool",
+     //      team: "Gaming Coordinators"
+     // },
+     // {
+     //      id: 12,
+     //      name: "Aishi",
+     //      surname: "Mitra",
+     //      image: "",
+     //      game:"8 Ball Pool",
+     //      team: "Gaming Coordinators"
+     // }
 
 ]
