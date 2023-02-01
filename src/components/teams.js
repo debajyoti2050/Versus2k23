@@ -84,13 +84,13 @@ export const marketing = [
           image: "./team/core/arghajit.jpg",
           team: "Marketing Team"
      },
-     // {
-     //      id: 3,
-     //      name: "Ankita",
-     //      surname: "De",
-     //      image: "",
-     //      team: "Marketing Team"
-     // },
+     {
+          id: 3,
+          name: "Ankita",
+          surname: "De",
+          image: "./team/marketing/ankita.jpg",
+          team: "Marketing Team"
+     },
      {
           id: 4,
           name: "Ankita",
@@ -112,13 +112,13 @@ export const marketing = [
           image: "./team/marketing/ishita-biswas.jpg",
           team: "Marketing Team"
      },
-     // {
-     //      id: 7,
-     //      name: "Prabhleen",
-     //      surname: "Kaur Arora",
-     //      image: "",
-     //      team: "Marketing Team"
-     // }
+     {
+          id: 7,
+          name: "Prabhleen",
+          surname: "Kaur Arora",
+          image: "./team/marketing/prabhleen.jpg",
+          team: "Marketing Team"
+     }
 
 ]
 export const accounts = [
@@ -160,20 +160,20 @@ export const accounts = [
 
 ]
 export const graphics = [
-     // {
-     //      id: 1,
-     //      name: "Swarup",
-     //      surname: "Paul",
-     //      image: "",
-     //      team: "Graphics team"
-     // },
-     // {
-     //      id: 2,
-     //      name: "Dipayan",
-     //      surname: "Banik",
-     //      image: "",
-     //      team: "Graphics team"
-     // },
+     {
+          id: 1,
+          name: "Swarup",
+          surname: "Paul",
+          image: "./team/graphics/swarup.jpg",
+          team: "Graphics team"
+     },
+     {
+          id: 2,
+          name: "Dipayan",
+          surname: "Banik",
+          image: "./team/graphics/dip.jpg",
+          team: "Graphics team"
+     },
      {
           id: 3,
           name: "Suddhaswatta",
@@ -250,14 +250,14 @@ export const website = [
 
 ]
 export const game = [
-     // {
-     //      id: 1,
-     //      name: "Arindam",
-     //      surname: "Mondal",
-     //      image: "",
-     //      game:"BGMI",
-     //      team: "Gaming Coordinators"
-     // },
+     {
+          id: 1,
+          name: "Arindam",
+          surname: "Mondal",
+          image: "./team/gaming/arindam.jpg",
+          game:"BGMI",
+          team: "Gaming Coordinators"
+     },
      // {
      //      id: 2,
      //      name: "Sayantan",
@@ -274,14 +274,14 @@ export const game = [
           game:"BGMI",
           team: "Gaming Coordinators"
      },
-     // {
-     //      id: 4,
-     //      name: "Dipayan",
-     //      surname: "Banik",
-     //      image: "",
-     //      game:"Valorant",
-     //      team: "Gaming Coordinators"
-     // },
+     {
+          id: 4,
+          name: "Dipayan",
+          surname: "Banik",
+          image: "./team/graphics/dip.jpg",
+          game:"Valorant",
+          team: "Gaming Coordinators"
+     },
      // {
      //      id: 5,
      //      name: "Soham",
@@ -298,14 +298,14 @@ export const game = [
           game:"Valorant",
           team: "Gaming Coordinators"
      },
-     // {
-     //      id: 7,
-     //      name: "Ankush",
-     //      surname: "Ghosh",
-     //      image: "",
-     //      game:"CS 1.6",
-     //      team: "Gaming Coordinators"
-     // },
+     {
+          id: 7,
+          name: "Ankush",
+          surname: "Ghosh",
+          image: "./team/gaming/ankush.jpg",
+          game:"CS 1.6",
+          team: "Gaming Coordinators"
+     },
      {
           id: 8,
           name: "Avay",
@@ -330,21 +330,21 @@ export const game = [
           game:"NFS",
           team: "Gaming Coordinators"
      },
-     // {
-     //      id: 11,
-     //      name: "Subhranil",
-     //      surname: "Paul",
-     //      image: "",
-     //      game:"8 Ball Pool",
-     //      team: "Gaming Coordinators"
-     // },
-     // {
-     //      id: 12,
-     //      name: "Aishi",
-     //      surname: "Mitra",
-     //      image: "",
-     //      game:"8 Ball Pool",
-     //      team: "Gaming Coordinators"
-     // }
+     {
+          id: 11,
+          name: "Subhranil",
+          surname: "Paul",
+          image: "./team/gaming/Subhranil.jpg",
+          game:"8 Ball Pool",
+          team: "Gaming Coordinators"
+     },
+     {
+          id: 12,
+          name: "Aishi",
+          surname: "Mitra",
+          image: "./team/gaming/aishi.jpg",
+          game:"8 Ball Pool",
+          team: "Gaming Coordinators"
+     }
 
 ]
