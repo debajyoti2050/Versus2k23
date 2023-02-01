@@ -1,3 +1,8 @@
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .heading {
   text-align: center;
   position: relative;
@@ -36,6 +41,8 @@
   border-radius: 4%;
   display: block;
   text-align: center;
+  background: #892be2b2;
+  color:bisque;
 }
 .card:hover {
   /* transform: scale(1.1); */
