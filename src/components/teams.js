@@ -25,13 +25,13 @@ export const faculty = [
      }
 ]
 export const core = [
-     // {
-     //      id: 1,
-     //      name: "Avishek",
-     //      surname: "Sharma",
-     //      image: "",
-     //      team: "Core Committee"
-     // },
+     {
+          id: 1,
+          name: "Avishek",
+          surname: "Sharma",
+          image: "./team/core/avishek.JPG",
+          team: "Core Committee"
+     },
      {
           id: 2,
           name: "Srija",
@@ -46,13 +46,13 @@ export const core = [
           image: "./team/marketing/pousali.jpg",
           team: "Core Committee"
      },
-     // {
-     //      id: 4,
-     //      name: "Kushagra",
-     //      surname: "Choudhury",
-     //      image: "",
-     //      team: "Core Committee"
-     // },
+     {
+          id: 4,
+          name: "Kushagra",
+          surname: "Choudhury",
+          image: "./team/accounts-team/kushagra.jpg",
+          team: "Core Committee"
+     },
      {
           id: 5,
           name: "Rapti",
@@ -60,13 +60,13 @@ export const core = [
           image: "./team/accounts-team/rapti.jpg",
           team: "Core Committee"
      },
-     // {
-     //      id: 6,
-     //      name: "Arghajit",
-     //      surname: "Singha Roy",
-     //      image: "",
-     //      team: "Core Committee"
-     // }
+     {
+          id: 6,
+          name: "Arghajit",
+          surname: "Singha Roy",
+          image: "./team/core/arghajit.jpg",
+          team: "Core Committee"
+     }
 
 ]
 export const marketing = [
@@ -77,13 +77,13 @@ export const marketing = [
           image: "./team/marketing/pousali.jpg",
           team: "Marketing Team"
      },
-     // {
-     //      id: 2,
-     //      name: "Arghajit",
-     //      surname: "Singha Roy",
-     //      image: "",
-     //      team: "Marketing Team"
-     // },
+     {
+          id: 2,
+          name: "Arghajit",
+          surname: "Singha Roy",
+          image: "./team/core/arghajit.jpg",
+          team: "Marketing Team"
+     },
      // {
      //      id: 3,
      //      name: "Ankita",
@@ -216,7 +216,7 @@ export const website = [
           id: 3,
           name: "Aniket",
           surname: "Shaw",
-          image: "",
+          image: "./team/website/aniket.JPG",
           team: "Website Team"
      },
      {
@@ -230,23 +230,23 @@ export const website = [
           id: 5,
           name: "Nisha",
           surname: "Goel",
-          image: "",
+          image: "./team/website/nisha.jpg",
           team: "Website Team"
      },
-     {
-          id: 6,
-          name: "Suvrajit",
-          surname: "Ghosh",
-          image: "",
-          team: "Website Team"
-     },
-     {
-          id: 7,
-          name: "Ananya",
-          surname: "Chakraborty",
-          image: "",
-          team: "Website Team"
-     }
+     // {
+     //      id: 6,
+     //      name: "Suvrajit",
+     //      surname: "Ghosh",
+     //      image: "",
+     //      team: "Website Team"
+     // },
+     // {
+     //      id: 7,
+     //      name: "Ananya",
+     //      surname: "Chakraborty",
+     //      image: "",
+     //      team: "Website Team"
+     // }
 
 ]
 export const game = [
@@ -293,7 +293,7 @@ export const game = [
      {
           id: 6,
           name: "Pradipta",
-          surname: "Shankar Bramhachary",
+          surname: "Shankar",
           image: "./team/gaming/pradipta.jpg",
           game:"Valorant",
           team: "Gaming Coordinators"
