@@ -1,52 +1,60 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-// import { unstable_HistoryRouter } from "react-router-dom";
 import { Formik, Form, Field } from "formik";
 import { TextField } from "../components/TextField";
 import * as Yup from "yup";
 import { RingLoader } from "react-spinners";
 import "../styles/Form.css";
 import Valo from "../assets/VALO.png"
+import { useNavigate } from "react-router";
+import { useEffect } from "react";
+import { onAuthStateChanged } from "@firebase/auth";
+import { auth } from "../firebase";
+import axios from "axios";
 
 const ValorantReg = () => {
-  const submit_style = {
-    fontFamily: "'Verdana'",
-    fontSize: "14px",
-    letterSpacing: "1px",
-    fontWeight: "800",
-    padding: "5px",
-    backgroundColor: "white",
-    border: "2px solid white",
-    color: "#03042C",
-    width: "30%",
-    marginLeft: "300px",
-    boxShadow: "4px 5px black",
-    borderRadius: "9px",
-  };
-  const body = {
-    backgroundColor: "rgba(28, 0, 62, 1)",
-    color: "white",
-    padding: "50px",
-  };
-  const input = {
-    marginTop: "5px",
-    padding: "5px",
-    width: "80%",
-    border: "2px solid cyan",
-    borderRadius: "4px",
-    backgroundColor: "#03042C",
-    color: "cyan",
-  };
-  const para = {
-    fontSize: "40px",
-    fontWeight: "700",
-    textAlign: "center",
-    textShadow: "2px 2px 2px cyan",
-  };
+  const [user, setUser] = useState('');
+  
   const [loading,setLoading] =useState(false)
-  // const history= unstable_HistoryRouter()
-  // const validate = Yup.object({});
+  const navigate= useNavigate()
+  const validate = Yup.object({
+    phone: Yup.string()
+    .max(14, "Phone number is not valid")
+    .required("Required"),
+    teamName: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player1Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player1RiotID: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player2Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player2RiotID: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player3Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player3RiotID: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player4Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player4RiotID: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player5Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player5RiotID: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    player6Name: Yup.string().max(50, "Must be 50 characters or less"),
+    player6RiotID: Yup.string().max(50, "Must be 50 characters or less"),
+    
+  });
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+
+    onAuthStateChanged(auth,(user)=>{
+      if(user){
+        setUser(user)
+        console.log(user);
+      }
+      else{
+        navigate('/')
+      }
+    } )
+  
+  },[navigate, user])
+
+
+
   return (
     
     <>
@@ -65,24 +73,49 @@ const ValorantReg = () => {
         ) : (
           <Formik
             initialValues={{
-              Name: "",
+              // email: "",
+              phone: "",
+              teamName: "",
+              player1Name: "",
+              player1RiotID: "",
+              player2Name: "",
+              player2RiotID: "",
+              player3Name: "",
+              player3RiotID: "",
+              player4Name: "",
+              player4RiotID: "",
+              player5Name: "",
+              player5RiotID: "",
+              player6Name: "",
+              player6RiotID: "",
             }}
-            // validationSchema={validate}
+            validationSchema={validate}
             onSubmit={async (values) => {
-              // console.log(values);
+              console.log(values);
               setLoading(true);
+              const config ={
+                headers:{
+                  "Content-Type":"application/json",
+                  Authorization: `${user.accessToken}`,
+                }
+              }
 
-              // try {
-              //   await axios.post(
-              //     "https://iic-backend.onrender.com/form",
-              //     values
-              //   );
-              //   setLoading(false);
-              //   history.push("/registrationsuccess");
-              // } catch (error) {
-              //   console.log(error);
-              //   history.push("/registrationfailed");
-              // }
+              try {
+                await axios.post(
+                  "https://versus-event.herokuapp.com/api/v1/registerValorant",
+                  {
+                    ...values,
+                  email : user.email,
+                  },
+                  config
+                );
+                setLoading(false);
+                navigate("/");
+              } catch (error) {
+                console.log(error);
+                setLoading(false);
+               
+              }
             }}
           >
             {({ errors, touched }) => (
@@ -92,50 +125,101 @@ const ValorantReg = () => {
                     <h1>Valorant Registration</h1>
                   </div>
                   <div className="display">
-                    <img src={Valo} />
+                    <img src={Valo} alt='valo' />
                     <Form className="mt-0 drop drop1 col-lg-8 mb-4 ">
                       <TextField
-                        label="Enter Your Name*"
-                        name="Name"
+                        label="Email*"
+                        name="email"
                         type="text"
-                        placeholder="Enter Name "
+                        value={user.email}
+                        placeholder="abc@gmail.com"
+                        disabled
                       />
                       <TextField
-                        label="Enter Your Name*"
-                        name="Name"
-                        type="text"
-                        placeholder="Enter Name "
+                        label="Phone*"
+                        name="phone"
+                        type="number"
+                        placeholder="Enter 10 digit phone number"
                       />
                       <TextField
-                        label="Enter Your Name*"
-                        name="Name"
+                        label="Team Name*"
+                        name="teamName"
                         type="text"
-                        placeholder="Enter Name "
+                        placeholder="Enter Team Name"
                       />
                       <TextField
-                        label="Enter Your Name*"
-                        name="Name"
+                        label="Player1 Name*"
+                        name="player1Name"
                         type="text"
-                        placeholder="Enter Name "
+                        placeholder="Enter Player1 Name "
                       />
                       <TextField
-                        label="Enter Your Name*"
-                        name="Name"
+                        label="Player1 Riot ID*"
+                        name="player1RiotID"
                         type="text"
-                        placeholder="Enter Name "
+                        placeholder="BRIMSTONE #1234"
                       />
                       <TextField
-                        label="Enter Your Name*"
-                        name="Name"
+                        label="Player2 Name*"
+                        name="player2Name"
                         type="text"
-                        placeholder="Enter Name "
+                        placeholder="Enter Player2 Name "
                       />
                       <TextField
-                        label="Enter Your Name*"
-                        name="Name"
+                        label="Player2 Riot ID*"
+                        name="player2RiotID"
                         type="text"
-                        placeholder="Enter Name "
+                        placeholder="JETT #1234"
                       />
+                      <TextField
+                        label="Player3 Name*"
+                        name="player3Name"
+                        type="text"
+                        placeholder="Enter Player3 Name "
+                      />
+                      <TextField
+                        label="Player3 Riot ID*"
+                        name="player3RiotID"
+                        type="text"
+                        placeholder="PHOENIX #1234"
+                      />
+                      <TextField
+                        label="Player4 Name*"
+                        name="player4Name"
+                        type="text"
+                        placeholder="Enter Player4 Name "
+                      />
+                      <TextField
+                        label="Player4 Riot ID*"
+                        name="player4RiotID"
+                        type="text"
+                        placeholder="SOVA #1234"
+                      />
+                      <TextField
+                        label="Player5 Name*"
+                        name="player5Name"
+                        type="text"
+                        placeholder="Enter Player5 Name "
+                      />
+                      <TextField
+                        label="Player5 Riot ID*"
+                        name="player5RiotID"
+                        type="text"
+                        placeholder="REYNA #1234"
+                      />
+                      <TextField
+                        label="Player6 Name (substitute)"
+                        name="player6Name"
+                        type="text"
+                        placeholder="Enter Player6 Name "
+                      />
+                      <TextField
+                        label="Player6 Riot ID (substitute)"
+                        name="player6RiotID"
+                        type="text"
+                        placeholder="OMEN #1234"
+                      />
+                      
                       <div className="display"><button className="btn grad mt-4" type="submit">
                     Submit
                   </button></div>
@@ -147,38 +231,7 @@ const ValorantReg = () => {
           </Formik>
         )}
       </div>
-      {/* <div style={body} className="form_element">
-
-      <p style={para}>VALORANT REGISTRATION</p>
-  
-      <form style={{paddingLeft: "250px"}}action="">
-        <label htmlFor="">Full Name</label>
-        <br />
-        <input style={input} type="text" placeholder="Enter your name" />
-        <br /><br />
-        <label htmlFor="">Email</label>
-        <br />
-        <input style={input} type="email" placeholder="abc@gmail.com" />
-        <br /><br />
-        <label htmlFor="">Phone</label>
-        <br />
-        <input style={input} type="text" placeholder="+91 XXXXX XXXXX" />
-        <br /><br />
-        <label htmlFor="">Profile Photo</label>
-        <br />
-        <input style={input} type="file" placeholder="No file chosen" />
-        <br /><br />
-        <label htmlFor="">LinkedIn Link</label>
-        <br />
-        <input style={input} type="url" placeholder="Enter your LinkedIn Link here" />
-        <br /><br />
-        <label htmlFor="">Github Link</label>
-        <br />
-        <input style={input} type="url" placeholder="Enter your Github Link here" />
-        <br /><br />
-        <input style={submit_style} type="submit" />
-      </form>
-    </div> */}
+    
       <Footer />
     </>
   );
