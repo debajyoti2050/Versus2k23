@@ -312,8 +312,6 @@ const Hero = () => {
           </div>
         </section>
       </section>
-
-      {/* <About/> */}
     </>
   );
 };
