@@ -2,7 +2,6 @@
 import "../styles/Teams.css";
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
-import person1 from "../assets/TeamImg.jpg";
 import Footer from "../components/Footer";
 
 import { accounts,game,graphics,faculty,core,marketing, website } from "../components/teams";
