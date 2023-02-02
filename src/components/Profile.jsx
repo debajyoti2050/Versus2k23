@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Profile.css";
 import ProfileIMG from "../assets/DummyProfileImg.jpg";
-import Background from "../assets/backgroundimg.jpg";
+// import Background from "../assets/backgroundimg.jpg";
 import Navbar from "./Navbar";
 import { onAuthStateChanged, signOut } from "@firebase/auth";
 import { auth } from "../firebase";

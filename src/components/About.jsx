@@ -1,6 +1,6 @@
 import React from "react";
 import aboutus from "../assets/aboutus.jpg";
-import banner from "../assets/banner.png";
+// import banner from "../assets/banner.png";
 import "../styles/About.scss";
 
 export default function About() {
@@ -26,7 +26,7 @@ export default function About() {
               . <br/>We have all the elements that makes it engaging and powerful -
               from strategy to mind games to camaraderie to thrills to
               risk-taking and much more. The long needed gaming community
-              finally getting its' own deserving platform at Versus 2k23.
+              finally getting its' own deserving platform at Versus 2k23.
             </div>
           </div>
         </div>
