@@ -124,7 +124,7 @@ export const marketing = [
           name: "Avishek",
           surname: "Sharma",
           image: "./team/core/avishek.JPG",
-          team: "Core Committee"
+          team: "Marketing Team"
      },
 
 ]
@@ -169,7 +169,7 @@ export const accounts = [
           name: "Avishek",
           surname: "Sharma",
           image: "./team/core/avishek.JPG",
-          team: "Core Committee"
+          team: "Accounts team"
      },
 
 ]
