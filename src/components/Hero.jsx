@@ -11,17 +11,15 @@ import CS from "../assets/cs1.6_web.jpg";
 import NFS from "../assets/nfs-mw_web.jpg";
 import {
   GoogleAuthProvider,
-  PhoneMultiFactorGenerator,
   onAuthStateChanged,
   signInWithPopup,
-  signOut,
 } from "firebase/auth";
 import { auth } from "../firebase";
 import { useEffect } from "react";
 import axios from "axios";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 const Hero = () => {
   const [user, setUser] = useState(null);
@@ -52,10 +50,10 @@ const Hero = () => {
       else setUser(null);
     });
   }, [user]);
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  },[]);
+  // useEffect(() => {
+  //   AOS.init();
+  //   AOS.refresh();
+  // },[]);
 
   return (
     <>
@@ -173,18 +171,19 @@ const Hero = () => {
                 </a>
               </div>
               <br></br>
-              <h5 className="pt-5" style={{color:'red'}}>*Registration Starts on 5th Feb*</h5>
+              <h5 className="pt-5" style={{ color: "red" }}>
+                *Registration Starts on 5th Feb*
+              </h5>
             </>
           ) : (
             <>
-            <button
-              onClick={handleGoogleSignIn}
-              type="button"
-              className="login-with-google-btn"
-            >
-              Sign In with Google
-            </button>
-           
+              <button
+                onClick={handleGoogleSignIn}
+                type="button"
+                className="login-with-google-btn"
+              >
+                Sign In with Google
+              </button>
             </>
           )}
           {/* <button onClick={handleGoogleSignIn} className="primary-button">Register Now</button> */}
@@ -202,12 +201,24 @@ const Hero = () => {
           <h1>Games</h1>
         </div>
         <section className="big-glassmorphism-card">
-          <div className="container glassmorphism-card flex" data-aos="fade-right" data-aos-duration="1500">
+          <div
+            className="container glassmorphism-card flex"
+            // data-aos="fade-right"
+            // data-aos-duration="1500"
+          >
             <div className="row">
-              <div className="big-feature-image col-lg-6 p-3 col-sm-12">
+              <div
+                className="big-feature-image col-lg-6 p-3 col-sm-12"
+                // data-aos="fade-right"
+                // data-aos-duration="1500"
+              >
                 <img src={Valorant} alt="" />
               </div>
-              <div className="descirp flex p-3 col-lg-6 col-sm-12">
+              <div
+                className="descirp flex p-3 col-lg-6 col-sm-12"
+                // data-aos="fade-left"
+                // data-aos-duration="1500"
+              >
                 <h4>5v5</h4>
                 <h3>Valorant</h3>
                 <p>
@@ -224,9 +235,17 @@ const Hero = () => {
           </div>
         </section>
         <section className="big-glassmorphism-card">
-          <div className="container glassmorphism-card flex" data-aos="fade-left" data-aos-duration="1500">
+          <div
+            className="container glassmorphism-card flex"
+            // data-aos="fade-left"
+            // data-aos-duration="1500"
+          >
             <div className="row">
-              <div className="descirp-2 flex p-3 col-lg-6 col-sm-12 order-last order-sm-first">
+              <div
+                className="descirp-2 flex p-3 col-lg-6 col-sm-12 order-last order-sm-first"
+                // data-aos="fade-right"
+                // data-aos-duration="1500"
+              >
                 <h4>Battle Royale</h4>
                 <h3>BGMI</h3>
                 <p>
@@ -239,19 +258,35 @@ const Hero = () => {
                   opportunity to taste the chicken dinner.
                 </p>
               </div>
-              <div className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last">
+              <div
+                className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last"
+                // data-aos="fade-left"
+                // data-aos-duration="1500"
+              >
                 <img src={BGMI} alt="" />
               </div>
             </div>
           </div>
         </section>
         <section className="big-glassmorphism-card">
-          <div className="container glassmorphism-card flex" data-aos="fade-right" data-aos-duration="1500">
+          <div
+            className="container glassmorphism-card flex"
+            // data-aos="fade-right"
+            // data-aos-duration="1500"
+          >
             <div className="row">
-              <div className="big-feature-image col-lg-6 p-3 col-sm-12">
+              <div
+                className="big-feature-image col-lg-6 p-3 col-sm-12"
+                // data-aos="fade-right"
+                // data-aos-duration="1500"
+              >
                 <img src={Ball} alt="" />
               </div>
-              <div className="descirp flex p-3 col-lg-6 col-sm-12">
+              <div
+                className="descirp flex p-3 col-lg-6 col-sm-12"
+                // data-aos="fade-left"
+                // data-aos-duration="1500"
+              >
                 <h4>1v1</h4>
                 <h3>8 Ball Pool</h3>
                 <p>
@@ -268,9 +303,17 @@ const Hero = () => {
           </div>
         </section>
         <section className="big-glassmorphism-card">
-          <div className="container glassmorphism-card flex" data-aos="fade-left" data-aos-duration="1500">
+          <div
+            className="container glassmorphism-card flex"
+            // data-aos="fade-left"
+            // data-aos-duration="1500"
+          >
             <div className="row">
-              <div className="descirp-2 flex p-3 col-lg-6 col-sm-12 order-last order-sm-first">
+              <div
+                className="descirp-2 flex p-3 col-lg-6 col-sm-12 order-last order-sm-first"
+                // data-aos="fade-right"
+                // data-aos-duration="1500"
+              >
                 <h4>5v5</h4>
                 <h3>Counter Strike 1.6</h3>
                 <p>
@@ -284,19 +327,35 @@ const Hero = () => {
                   get the crown.
                 </p>
               </div>
-              <div className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last">
+              <div
+                className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last"
+                // data-aos="fade-left"
+                // data-aos-duration="1500"
+              >
                 <img src={CS} alt="" />
               </div>
             </div>
           </div>
         </section>
         <section className="big-glassmorphism-card">
-          <div className="container glassmorphism-card flex"data-aos="fade-right" data-aos-duration="1500">
+          <div
+            className="container glassmorphism-card flex"
+            // data-aos="fade-right"
+            // data-aos-duration="1500"
+          >
             <div className="row">
-              <div className="big-feature-image col-lg-6 p-3 col-sm-12">
+              <div
+                className="big-feature-image col-lg-6 p-3 col-sm-12"
+                // data-aos="fade-right"
+                // data-aos-duration="1500"
+              >
                 <img src={NFS} alt="" />
               </div>
-              <div className="descirp flex p-3 col-lg-6 col-sm-12">
+              <div
+                className="descirp flex p-3 col-lg-6 col-sm-12"
+                // data-aos="fade-left"
+                // data-aos-duration="1500"
+              >
                 <h4>1v1</h4>
                 <h3>Need For Speed</h3>
                 <p>

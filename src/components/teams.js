@@ -118,7 +118,14 @@ export const marketing = [
           surname: "Kaur Arora",
           image: "./team/marketing/prabhleen.jpg",
           team: "Marketing Team"
-     }
+     },
+     {
+          id: 8,
+          name: "Avishek",
+          surname: "Sharma",
+          image: "./team/core/avishek.JPG",
+          team: "Marketing Team"
+     },
 
 ]
 export const accounts = [
@@ -156,7 +163,14 @@ export const accounts = [
           surname: "Roy",
           image: "./team/accounts-team/rohan-roy.jpg",
           team: "Accounts team"
-     }
+     },
+     {
+          id: 6,
+          name: "Avishek",
+          surname: "Sharma",
+          image: "./team/core/avishek.JPG",
+          team: "Accounts team"
+     },
 
 ]
 export const graphics = [
