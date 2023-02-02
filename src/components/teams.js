@@ -233,20 +233,20 @@ export const website = [
           image: "./team/website/nisha.jpg",
           team: "Website Team"
      },
-     // {
-     //      id: 6,
-     //      name: "Suvrajit",
-     //      surname: "Ghosh",
-     //      image: "",
-     //      team: "Website Team"
-     // },
-     // {
-     //      id: 7,
-     //      name: "Ananya",
-     //      surname: "Chakraborty",
-     //      image: "",
-     //      team: "Website Team"
-     // }
+     {
+          id: 6,
+          name: "Suvrajit",
+          surname: "Ghosh",
+          image: "./team/website/suvrajit.jpg",
+          team: "Website Team"
+     },
+     {
+          id: 7,
+          name: "Ananya",
+          surname: "Chakraborty",
+          image: "./team/website/ananya.jpg",
+          team: "Website Team"
+     }
 
 ]
 export const game = [
