@@ -24,7 +24,7 @@ const Profile = () => {
       Authorization: `${user?.stsTokenManager.accessToken}`,
       }
       
-      const {data} =await axios.post('https://versus-event.herokuapp.com/api/v1/getUniqueCodeByEmail',{email:user?.email},{headers})
+      const {data} =await axios.post('https://versus-event.herokuapp.com/api/v1/8fb6b78dc6d7cb36f2bd0373ce496aa5/getUserByEmail',{email:user?.email},{headers})
       // console.log(data);
       setUid(data)
     }
@@ -69,7 +69,7 @@ const Profile = () => {
             <div className="detailsText col-lg-3 col-md-6">
               <h1>{user?.displayName}</h1>
               <h5>{user?.email}</h5>
-              <h5>UID : {uid?.code}</h5>
+              <h5>UID : {uid?.uniqueCode}</h5>
               {user ? (
             <button onClick={() => signOut(auth)} className="primary-button mt-3">
               Sign Out
