@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Formik, Form, Field } from "formik";
+import { ErrorMessage,Formik, Form, Field } from "formik";
 import { TextField } from "../components/TextField";
 import * as Yup from "yup";
 import { RingLoader } from "react-spinners";
@@ -254,12 +254,7 @@ const ValorantReg = () => {
                         errors.player5RiotID ||
                         errors.player6Name ||
                         errors.player6RiotID) && (
-                        <div className="error">
-                          <p>
-                            <i className="fas fa-exclamation-circle"></i> Please
-                            check all the fields
-                          </p>
-                        </div>
+                          <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}><span className="error mt-3 mb-3">Mandatory Fields Required </span></div>
                       )}
                     </Form>
                   </div>
