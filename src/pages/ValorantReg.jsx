@@ -118,7 +118,7 @@ const ValorantReg = () => {
 
               try {
                 await axios.post(
-                  "https://versus-event.herokuapp.com/api/v1/registerValorant",
+                  "https://versus-event.herokuapp.com/api/v1/fb6b78dc6d7cb36f2bd0373ce/registerValorant",
                   {
                     ...values,
                     email: user.email,

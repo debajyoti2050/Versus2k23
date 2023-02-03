@@ -86,7 +86,7 @@ const BallpoolReg = () => {
 
             try {
               await axios.post(
-                "https://versus-event.herokuapp.com/api/v1/registerBallPool",
+                "https://versus-event.herokuapp.com/api/v1/828dc227520faa769b3226e8fc7f5431/registerBallPool",
                 {
                   ...values,
                   email: user.email,
