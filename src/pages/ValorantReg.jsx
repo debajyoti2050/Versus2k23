@@ -6,7 +6,7 @@ import { TextField } from "../components/TextField";
 import * as Yup from "yup";
 import { RingLoader } from "react-spinners";
 import "../styles/Form.css";
-import Valo from "../assets/VALO.png"
+import Valo from "../assets/VALO.png";
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
 import { onAuthStateChanged } from "@firebase/auth";
@@ -14,49 +14,65 @@ import { auth } from "../firebase";
 import axios from "axios";
 
 const ValorantReg = () => {
-  const [user, setUser] = useState('');
-  
-  const [loading,setLoading] =useState(false)
-  const navigate= useNavigate()
+  const [user, setUser] = useState("");
+
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
   const validate = Yup.object({
     phone: Yup.string()
-    .max(14, "Phone number is not valid")
-    .required("Required"),
-    teamName: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
-    player1Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
-    player1RiotID: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
-    player2Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
-    player2RiotID: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
-    player3Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
-    player3RiotID: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
-    player4Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
-    player4RiotID: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
-    player5Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
-    player5RiotID: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+      .max(14, "Phone number is not valid")
+      .required("Required"),
+    teamName: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
+    player1Name: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
+    player1RiotID: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
+    player2Name: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
+    player2RiotID: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
+    player3Name: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
+    player3RiotID: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
+    player4Name: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
+    player4RiotID: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
+    player5Name: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
+    player5RiotID: Yup.string()
+      .max(50, "Must be 50 characters or less")
+      .required("Required"),
     player6Name: Yup.string().max(50, "Must be 50 characters or less"),
     player6RiotID: Yup.string().max(50, "Must be 50 characters or less"),
-    
   });
 
-  useEffect(()=>{
-    window.scrollTo(0,0)
+  useEffect(() => {
+    window.scrollTo(0, 0);
 
-    onAuthStateChanged(auth,(user)=>{
-      if(user){
-        setUser(user)
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
         console.log(user);
+      } else {
+        navigate("/");
       }
-      else{
-        navigate('/')
-      }
-    } )
-  
-  },[navigate, user])
-
-
+    });
+  }, [navigate, user]);
 
   return (
-    
     <>
       <Navbar />
       <div className="iicform">
@@ -93,19 +109,19 @@ const ValorantReg = () => {
             onSubmit={async (values) => {
               console.log(values);
               setLoading(true);
-              const config ={
-                headers:{
-                  "Content-Type":"application/json",
+              const config = {
+                headers: {
+                  "Content-Type": "application/json",
                   Authorization: `${user.accessToken}`,
-                }
-              }
+                },
+              };
 
               try {
                 await axios.post(
                   "https://versus-event.herokuapp.com/api/v1/registerValorant",
                   {
                     ...values,
-                  email : user.email,
+                    email: user.email,
                   },
                   config
                 );
@@ -114,7 +130,6 @@ const ValorantReg = () => {
               } catch (error) {
                 console.log(error);
                 setLoading(false);
-               
               }
             }}
           >
@@ -125,7 +140,7 @@ const ValorantReg = () => {
                     <h1>Valorant Registration</h1>
                   </div>
                   <div className="display">
-                    <img src={Valo} alt='valo' />
+                    <img src={Valo} alt="valo" />
                     <Form className="mt-0 drop drop1 col-lg-8 mb-4 ">
                       <TextField
                         label="Email*"
@@ -219,10 +234,33 @@ const ValorantReg = () => {
                         type="text"
                         placeholder="OMEN #1234"
                       />
-                      
-                      <div className="display"><button className="btn grad mt-4" type="submit">
-                    Submit
-                  </button></div>
+
+                      <div className="display">
+                        <button className="btn grad mt-4" type="submit">
+                          Submit
+                        </button>
+                      </div>
+                      {(errors.phone ||
+                        errors.teamName ||
+                        errors.player1Name ||
+                        errors.player1RiotID ||
+                        errors.player2Name ||
+                        errors.player2RiotID ||
+                        errors.player3Name ||
+                        errors.player3RiotID ||
+                        errors.player4Name ||
+                        errors.player4RiotID ||
+                        errors.player5Name ||
+                        errors.player5RiotID ||
+                        errors.player6Name ||
+                        errors.player6RiotID) && (
+                        <div className="error">
+                          <p>
+                            <i className="fas fa-exclamation-circle"></i> Please
+                            check all the fields
+                          </p>
+                        </div>
+                      )}
                     </Form>
                   </div>
                 </div>
@@ -231,7 +269,7 @@ const ValorantReg = () => {
           </Formik>
         )}
       </div>
-    
+
       <Footer />
     </>
   );
