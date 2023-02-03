@@ -4,6 +4,10 @@ import Profile from "./components/Profile";
 import Home from "./pages/Home";
 import Teams from "./pages/Teams";
 import ValorantReg from "./pages/ValorantReg";
+import BallpoolReg from "./pages/BallpoolReg";
+import BgmiReg from "./pages/BgmiReg";
+import CsReg from "./pages/CsReg";
+import NfsReg from "./pages/NfsReg";
 
 function App() {
   return (
@@ -12,6 +16,11 @@ function App() {
     <Route path='/profile' element={<Profile />} />
     <Route path='/teams' element={<Teams />} />
     <Route path='/valorant-register' element={<ValorantReg />} />
+    <Route path='/ballpool-register' element={<BallpoolReg />} />
+    <Route path='/bgmi-register' element={<BgmiReg />} />
+    <Route path='/cs-register' element={<CsReg />} />
+    <Route path='/nfs-register' element={<NfsReg />} />
+
    </Routes>
   );
 }
