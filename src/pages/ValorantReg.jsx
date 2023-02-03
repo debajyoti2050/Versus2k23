@@ -153,7 +153,7 @@ const ValorantReg = () => {
                       <TextField
                         label="Phone*"
                         name="phone"
-                        type="number"
+                        type="text"
                         placeholder="Enter 10 digit phone number"
                       />
                       <TextField

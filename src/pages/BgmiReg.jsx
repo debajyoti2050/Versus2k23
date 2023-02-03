@@ -179,7 +179,7 @@ const BgmiReg = () => {
                     <TextField
                       label="Player 1 BGMI ID*"
                       name="player1ID"
-                      type="text"
+                      type="number"
                       placeholder="Enter Player 1 BGMI ID"
                     />
                     <TextField
@@ -191,7 +191,7 @@ const BgmiReg = () => {
                     <TextField
                       label="Player 2 BGMI ID*"
                       name="player2ID"
-                      type="text"
+                      type="number"
                       placeholder="Enter Player 2 BGMI ID"
                     />
                     <TextField
@@ -203,7 +203,7 @@ const BgmiReg = () => {
                     <TextField
                       label="Player 3 BGMI ID*"
                       name="player3ID"
-                      type="text"
+                      type="number"
                       placeholder="Enter Player 3 BGMI ID"
                     />
                     <TextField
@@ -215,7 +215,7 @@ const BgmiReg = () => {
                     <TextField
                       label="Player 4 BGMI ID*"
                       name="player4ID"
-                      type="text"
+                      type="number"
                       placeholder="Enter Player 4 BGMI ID"
                     />
                     <TextField
@@ -227,7 +227,7 @@ const BgmiReg = () => {
                     <TextField
                       label="Player 5 BGMI ID (substiute)"
                       name="player5ID"
-                      type="text"
+                      type="number"
                       placeholder="Enter Player 5 BGMI ID"
                     />
 

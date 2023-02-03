@@ -149,17 +149,8 @@ const BallpoolReg = () => {
                     {(
                       errors.name ||
                       errors.phone ||
-                      errors.teamName ||
-                      errors.player1Name ||
-                      errors.player1ID ||
-                      errors.player2IName ||
-                      errors.player2ID ||
-                      errors.player3IName ||
-                      errors.player3ID ||
-                      errors.player4IName ||
-                      errors.player4ID ||
-                      errors.player5IName ||
-                      errors.player5ID
+                      errors.ballpoolUID
+                      
                     ) && (
                         <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}><span className="error mt-3 mb-3">Mandatory Fields Required </span></div>
                     )}
