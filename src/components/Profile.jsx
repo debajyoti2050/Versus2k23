@@ -24,7 +24,7 @@ const Profile = () => {
       Authorization: `${user?.stsTokenManager.accessToken}`,
       }
       
-      const {data} =await axios.post('https://versus-event.herokuapp.com/api/v1/getUniqueCodeByEmail',{email:user?.email},{headers})
+      const {data} =await axios.post('https://versus-event.herokuapp.com/api/v1/8fb6b78dc6d7cb36f2bd0373ce496aa5/getUserByEmail',{email:user?.email},{headers})
       // console.log(data);
       setUid(data)
     }

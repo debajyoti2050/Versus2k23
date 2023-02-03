@@ -31,7 +31,7 @@ const Hero = () => {
         // console.log(result);
         try {
           const { data } = await axios.post(
-            "https://versus-event.herokuapp.com/api/v1/registerUser",
+            "https://versus-event.herokuapp.com/api/v1/9c142e80023e07c3/registerUser",
             { name: result.user.displayName, email: result.user.email }
           );
           // console.log(data);
