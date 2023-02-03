@@ -84,7 +84,7 @@ const CsReg = () => {
 
             try {
               await axios.post(
-                "https://versus-event.herokuapp.com/api/v1/registerBallPool",
+                "https://versus-event.herokuapp.com/api/v1/registerCs",
                 {
                   ...values,
                   email: user.email,
@@ -103,7 +103,7 @@ const CsReg = () => {
             <section id="appform">
               <div className="container">
                 <div className="header mt-3 mb-4">
-                  <h1>BGMI Registration</h1>
+                  <h1>CS 1.6 Registration</h1>
                 </div>
                 <div className="display">
                   <img src={Valo} alt="valo" />
@@ -166,7 +166,7 @@ const CsReg = () => {
                       type="text"
                       placeholder="Enter player 5 name"
                     />
-                    
+
 
                     
 
@@ -180,7 +180,12 @@ const CsReg = () => {
                     {(
                       errors.name ||
                       errors.phone ||
-                      errors.ballpoolUID
+                      errors.teamName ||
+                      errors.player1Name ||
+                      errors.player2Name ||
+                      errors.player3Name ||
+                      errors.player4Name ||
+                      errors.player5Name
                       
                     ) && (
                         <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}><span className="error mt-3 mb-3">Mandatory Fields Required </span></div>
