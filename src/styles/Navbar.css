@@ -113,7 +113,7 @@
 
 
     .nav-menu.active {
-      background: rgba(94, 3, 125, 0.951);
+      background: rgb(94, 3, 125);
       left: 0px;
       opacity: 1;
       transition: all 0.5s ease;

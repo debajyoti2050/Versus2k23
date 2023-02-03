@@ -130,7 +130,7 @@ const ValorantReg = () => {
                       <TextField
                         label="Email*"
                         name="email"
-                        type="text"
+                        type="email"
                         value={user.email}
                         placeholder="abc@gmail.com"
                         disabled
