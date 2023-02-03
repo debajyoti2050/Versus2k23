@@ -6,7 +6,7 @@ import { TextField } from "../components/TextField";
 import * as Yup from "yup";
 import { RingLoader } from "react-spinners";
 import "../styles/Form.css";
-import Valo from "../assets/VALO.png";
+import Valo from "../assets/pool.png";
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
 import { onAuthStateChanged } from "@firebase/auth";
