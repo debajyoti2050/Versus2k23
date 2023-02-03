@@ -69,7 +69,7 @@ const Profile = () => {
             <div className="detailsText col-lg-3 col-md-6">
               <h1>{user?.displayName}</h1>
               <h5>{user?.email}</h5>
-              <h5>UID : {uid?.code}</h5>
+              <h5>UID : {uid?.uniqueCode}</h5>
               {user ? (
             <button onClick={() => signOut(auth)} className="primary-button mt-3">
               Sign Out
