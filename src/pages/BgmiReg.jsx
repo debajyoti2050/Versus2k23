@@ -35,25 +35,25 @@ const BgmiReg = () => {
     player1ID: Yup.string()
       .max(50, "Must be 50 characters or less")
       .required("Required"),
-    player2IName: Yup.string()
+    player2Name: Yup.string()
       .max(50, "Must be 50 characters or less")
       .required("Required"),
     player2ID: Yup.string()
       .max(50, "Must be 50 characters or less")
       .required("Required"),
-    player3IName: Yup.string()
+    player3Name: Yup.string()
       .max(50, "Must be 50 characters or less")
       .required("Required"),
     player3ID: Yup.string()
       .max(50, "Must be 50 characters or less")
       .required("Required"),
-    player4IName: Yup.string()
+    player4Name: Yup.string()
       .max(50, "Must be 50 characters or less")
       .required("Required"),
     player4ID: Yup.string()
       .max(50, "Must be 50 characters or less")
       .required("Required"),
-    player5IName: Yup.string()
+    player5Name: Yup.string()
       .max(50, "Must be 50 characters or less"),
       
     player5ID: Yup.string()
@@ -98,13 +98,13 @@ const BgmiReg = () => {
             teamName: "",
             player1Name: "",
             player1ID: "",
-            player2IName: "",
+            player2Name: "",
             player2ID: "",
-            player3IName: "",
+            player3Name: "",
             player3ID: "",
-            player4IName: "",
+            player4Name: "",
             player4ID: "",
-            player5IName: "",
+            player5Name: "",
             player5ID: "",
           }}
           validationSchema={validate}
@@ -152,12 +152,7 @@ const BgmiReg = () => {
                       placeholder="abc@gmail.com"
                       disabled
                     />
-                    <TextField
-                      label="Name*"
-                      name="name"
-                      type="text"
-                      placeholder="Enter your name"
-                    />
+                   
                     <TextField
                       label="Phone*"
                       name="phone"
@@ -184,7 +179,7 @@ const BgmiReg = () => {
                     />
                     <TextField
                       label="Player 2 Name*"
-                      name="player2IName"
+                      name="player2Name"
                       type="text"
                       placeholder="Enter Player 2 Name"
                     />
@@ -196,7 +191,7 @@ const BgmiReg = () => {
                     />
                     <TextField
                       label="Player 3 Name*"
-                      name="player3IName"
+                      name="player3Name"
                       type="text"
                       placeholder="Enter Player 3 Name"
                     />
@@ -208,7 +203,7 @@ const BgmiReg = () => {
                     />
                     <TextField
                       label="Player 4 Name*"
-                      name="player4IName"
+                      name="player4Name"
                       type="text"
                       placeholder="Enter Player 4 Name"
                     />
@@ -220,7 +215,7 @@ const BgmiReg = () => {
                     />
                     <TextField
                       label="Player 5 Name (substiute)"
-                      name="player5IName"
+                      name="player5Name"
                       type="text"
                       placeholder="Enter Player 5 Name"
                     />
@@ -244,13 +239,13 @@ const BgmiReg = () => {
                       errors.teamName ||
                       errors.player1Name ||
                       errors.player1ID ||
-                      errors.player2IName ||
+                      errors.player2Name ||
                       errors.player2ID ||
-                      errors.player3IName ||
+                      errors.player3Name ||
                       errors.player3ID ||
-                      errors.player4IName ||
+                      errors.player4Name ||
                       errors.player4ID ||
-                      errors.player5IName ||
+                      errors.player5Name ||
                       errors.player5ID
                     ) && (
                         <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}><span className="error mt-3 mb-3">Mandatory Fields Required </span></div>
