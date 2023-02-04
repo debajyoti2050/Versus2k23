@@ -107,7 +107,7 @@ const Profile = () => {
             </div>
           ):(<></>)}
 
-          {(uid?.csIsregistered) ? (
+          {(uid?.csIsRegistered) ? (
             <div className="col-lg-4">
             <p className="games"><p className="mt-3">CS 1.6 : {(uid.csPaymentStatus)? (<>(Payment Success✅)</>):(<>Payment Pending🟡</>)}</p></p>
             </div>
