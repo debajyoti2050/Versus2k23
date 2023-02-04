@@ -230,6 +230,7 @@ const Hero = () => {
                   must eliminate all the attackers or prevent them from planting
                   their bomb.
                 </p>
+                <a href="https://docs.google.com/document/d/15Tj-el79lUH4Yz_bdgKO-A-xXa6vZkX-/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
               </div>
             </div>
           </div>
@@ -257,6 +258,7 @@ const Hero = () => {
                   over the gaming world to gain the first position and have the
                   opportunity to taste the chicken dinner.
                 </p>
+                <a href="https://docs.google.com/document/d/1N6JrVSN825IX0lvxsFkQmzUhnAI4JQdi/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
               </div>
               <div
                 className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last"
@@ -298,6 +300,7 @@ const Hero = () => {
                   types. So select your Club and get ready to become the master
                   of the pool!
                 </p>
+                <a href="https://docs.google.com/document/d/1EWybAnFJL3cdZvYhkY0JjxCgEUBJWu2n/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
               </div>
             </div>
           </div>
@@ -326,6 +329,7 @@ const Hero = () => {
                   various maps, skills and strategies. Come show us yours and
                   get the crown.
                 </p>
+                <a href="https://docs.google.com/document/d/1vigysNGj6gAHFTGAqQ18wZLoOoWHL1Qb/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
               </div>
               <div
                 className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last"
@@ -366,6 +370,7 @@ const Hero = () => {
                   compete against each other to become the most wanted racer of
                   the city.
                 </p>
+                <a href="https://docs.google.com/document/d/1zvEs3-9fhTsfvCkxXzDyF5fXzT59SNhf/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" className="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
               </div>
             </div>
           </div>

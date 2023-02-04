@@ -221,3 +221,25 @@ video {
   color: white;
   transition: all 0.3s ease-in-out; 
 }
+
+.buttonClass {
+  font-size:15px;
+  font-family:Arial;
+  width:175px;
+  height:36px;
+  border-width:5px;
+  color:rgba(228, 228, 228, 1);
+  border-color:rgb(252, 253, 252);
+  font-weight:bold;
+  border-radius:28px;
+  text-align: center;
+  padding:7px ;
+  text-decoration: none;
+  text-shadow: 4px 4px 10px #010500;
+  background:rgba(253, 249, 253, 0.307);
+}
+
+.buttonClass:hover {
+  background: rgb(31, 6, 81);
+  color:#fff;
+}
