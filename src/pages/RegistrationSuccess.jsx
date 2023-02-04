@@ -37,13 +37,20 @@ const RegistrationSuccess = () => {
   return (
     <>
     <Navbar/>
-    <div class="container">
+    <div class="container mt-5 mb-5">
+      <div className="container1">
     <div class="text-center mt-5">
-        <img class="profileimg" src={updatedPhotoURL}/>
+        <img className="profileimg1" src={updatedPhotoURL}/>
     </div>
     <p class="text-center T-text mb-4">Thank You for Registering!</p>
-    <div class="text-center"><a href="/profile">
-    <div class="btn prof-btn pr-4 pl-4">Your Profile</div></a> 
+    <p class="text-center T-text1 mb-4">To finish your <span style={{color:"green", fontWeight:"700"}}>payment</span> process please visit our college campus</p>
+    <p class="text-center T-text1 mb-4"><span style={{fontWeight:"700"}}>Address : </span> GN-34/2, Ashram Building, Saltlake Electronics Complex, Street Number 27, Sector V, Bidhannagar, Kolkata, West Bengal 700091</p>
+    <p class="text-center T-text1 mb-4"><span style={{fontWeight:"600"}}><i class="bi bi-telephone-fill"></i> <i class="bi bi-whatsapp"></i>&nbsp;Arindam Mondal : </span>8388092132</p>
+    <p class="text-center T-text1 mb-4"><span style={{fontWeight:"600"}}><i class="bi bi-telephone-fill"></i> <i class="bi bi-whatsapp"></i>&nbsp;Sayantan Ghosh  : </span>8250711949</p>
+    <p class="text-center T-text1 mb-4"><span style={{fontWeight:"600"}}><i class="bi bi-telephone-fill"></i> <i class="bi bi-whatsapp"></i>&nbsp;Nirmalya Shit  : </span>9330853619</p>
+    <div class="text-center mb-5"><a href="/profile">
+    <div class="prof-but pr-4 pl-4 ">View Profile&nbsp;<i className="bi bi-arrow-up-right"></i></div></a> 
+    </div>
     </div>
 </div>
 <Footer/>

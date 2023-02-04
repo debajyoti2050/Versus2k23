@@ -1,22 +1,49 @@
-.profileimg{
+.container1{
+    border:2px solid #fff;
+    border-radius: 1rem;
+    background-color: #0a0a0a78;
+}
+.profileimg1{
     border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
+    margin-top: 10px;
 }
 .T-text{
     font-size: 4rem;
+    color:bisque;
 }
-.prof-btn{
-    font-size:2rem;
-    border-radius: 1rem;
-    background-color: rgba(225, 102, 231, 0.36);
-    font-weight: bold;
-    text-align: center;
+.T-text1{
+    font-size: 1.5rem;
+    color:bisque;
 }
-.prof-btn:hover{
-    letter-spacing: 0.05rem;
-    box-shadow: 0 0 5px #22c8e5;
-}
+.prof-but {
+    color: rgb(245, 203, 230);
+    flex-direction: row;
+    gap: 1.5em;
+    font-size:15px;
+    font-family:Arial;
+    border-width:0px;
+    color:#fff;
+    border-color:rgba(245, 173, 242, 1);
+    
+    border-top-left-radius:13px;
+    border-top-right-radius:13px;
+    border-bottom-left-radius:13px;
+    border-bottom-right-radius:13px;
+    /* box-shadow: 13px 15px 37px -7px rgb(197, 174, 203); */
+    text-shadow: 0px -4px 8px rgb(29, 2, 35);
+    background:linear-gradient(rgb(113, 30, 192), rgb(62, 10, 115));
+    align-items: center;
+    padding:8px 9px;
+    /* width: 200px; */
+    border-radius: 15px;
+  }
+  .prof-but:hover {
+    background: linear-gradient(rgb(62, 10, 115), rgb(113, 30, 192));
+    color: white;
+    transition: all 0.3s ease-in-out; 
+  }
 
 
 
