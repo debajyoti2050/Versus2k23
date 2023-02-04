@@ -243,3 +243,27 @@ video {
   background: rgb(31, 6, 81);
   color:#fff;
 }
+
+
+.buttonRegister {
+  font-size:15px;
+  font-family:Arial;
+  width:140px;
+  height:36px;
+  border-width:2px;
+  color:#fff;
+  padding:7px ;
+  text-decoration: none;
+  border-color:#1f2f47;
+  border-radius:17px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow:0px 0px 14px 1px #b0b0b0;
+  text-shadow:inset 0px 1px 0px #263666;text-shadow: 4px 4px 10px #010500;
+  background:rgb(88, 29, 142);
+}
+
+/* .buttonRegister:hover {
+  background: #b0b0b0;
+} */
+              

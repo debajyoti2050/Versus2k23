@@ -18,6 +18,7 @@ import {
 import { auth } from "../firebase";
 import { useEffect } from "react";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
 
 // import AOS from "aos";
 // import "aos/dist/aos.css";
@@ -37,6 +38,18 @@ const Hero = () => {
           );
           // console.log(data);
         } catch (err) {
+          toast.error(
+            err,
+            {
+              position: toast.POSITION.TOP_RIGHT,
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              theme:"dark"
+            }
+          )
           console.log(err);
           signOut(auth)
         }
@@ -59,6 +72,7 @@ const Hero = () => {
 
   return (
     <>
+    <ToastContainer/>
       <header>
         <div className="hero-video flex">
           <div className="versus">
@@ -232,7 +246,9 @@ const Hero = () => {
                   must eliminate all the attackers or prevent them from planting
                   their bomb.
                 </p>
-                <a href="https://docs.google.com/document/d/15Tj-el79lUH4Yz_bdgKO-A-xXa6vZkX-/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                <h5>Registration Fee : 250/- Per Team</h5>
+                <a href="https://docs.google.com/document/d/15Tj-el79lUH4Yz_bdgKO-A-xXa6vZkX-/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" className="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                <a href="#" className="buttonRegister">Register</a>
               </div>
             </div>
           </div>
@@ -260,7 +276,9 @@ const Hero = () => {
                   over the gaming world to gain the first position and have the
                   opportunity to taste the chicken dinner.
                 </p>
+                <h5>Registration Fee : 200/- Per Team</h5>
                 <a href="https://docs.google.com/document/d/1N6JrVSN825IX0lvxsFkQmzUhnAI4JQdi/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                <a href="#" className="buttonRegister">Register</a>
               </div>
               <div
                 className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last"
@@ -302,7 +320,9 @@ const Hero = () => {
                   types. So select your Club and get ready to become the master
                   of the pool!
                 </p>
+                <h5>Registration Fee : 30/- Per Member</h5>
                 <a href="https://docs.google.com/document/d/1EWybAnFJL3cdZvYhkY0JjxCgEUBJWu2n/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                <a href="#" className="buttonRegister">Register</a>
               </div>
             </div>
           </div>
@@ -331,7 +351,9 @@ const Hero = () => {
                   various maps, skills and strategies. Come show us yours and
                   get the crown.
                 </p>
+                <h5>Registration Fee : 250/- Per Team</h5>
                 <a href="https://docs.google.com/document/d/1vigysNGj6gAHFTGAqQ18wZLoOoWHL1Qb/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                <a href="#" className="buttonRegister">Register</a>
               </div>
               <div
                 className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last"
@@ -372,7 +394,9 @@ const Hero = () => {
                   compete against each other to become the most wanted racer of
                   the city.
                 </p>
+                <h5>Registration Fee : 80/- Per Member</h5>
                 <a href="https://docs.google.com/document/d/1zvEs3-9fhTsfvCkxXzDyF5fXzT59SNhf/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" className="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                <a href="#" className="buttonRegister">Register</a>
               </div>
             </div>
           </div>
