@@ -13,16 +13,19 @@ import {
   GoogleAuthProvider,
   onAuthStateChanged,
   signInWithPopup,
+  signOut,
 } from "firebase/auth";
 import { auth } from "../firebase";
 import { useEffect } from "react";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
 
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
 const Hero = () => {
   const [user, setUser] = useState(null);
+  const [fetchUser, setFetchUser] = useState(null);
 
   const handleGoogleSignIn = () => {
     const googleProvider = new GoogleAuthProvider();
@@ -36,7 +39,20 @@ const Hero = () => {
           );
           // console.log(data);
         } catch (err) {
+          toast.error(
+            err,
+            {
+              position: toast.POSITION.TOP_RIGHT,
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              theme:"dark"
+            }
+          )
           console.log(err);
+          signOut(auth)
         }
       })
       .catch((error) => {
@@ -45,8 +61,25 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) setUser(user);
+    onAuthStateChanged(auth, async(user) => {
+      if (user) {
+      setUser(user);
+      try{
+        const config = {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `${user.accessToken}`,
+          },
+        };
+        const { data } =await  axios.post('https://versus-event.herokuapp.com/api/v1/8fb6b78dc6d7cb36f2bd0373ce496aa5/getUserByEmail',{email:user.email},config)
+        // console.log(data,'hii');
+        setFetchUser(data)
+      }
+      catch(err){
+        console.log(err);
+      }
+    }
+
       else setUser(null);
     });
   }, [user]);
@@ -57,8 +90,9 @@ const Hero = () => {
 
   return (
     <>
+    <ToastContainer/>
       <header>
-        <div className="hero-video flex">
+        <div className="hero-video flex" id="header">
           <div className="versus">
             <svg
               id="Layer_1"
@@ -170,10 +204,11 @@ const Hero = () => {
                   </div>
                 </a>
               </div>
+              <a className="my-button mt-5" href="#games">Browse Games&nbsp;<i class="bi bi-arrow-down"></i></a>
               <br></br>
-              <h5 className="pt-5" style={{ color: "red" }}>
+              {/* <h5 className="pt-5" style={{ color: "red" }}>
                 *Registration Starts on 5th Feb*
-              </h5>
+              </h5> */}
             </>
           ) : (
             <>
@@ -184,6 +219,7 @@ const Hero = () => {
               >
                 Sign In with Google
               </button>
+              
             </>
           )}
           {/* <button onClick={handleGoogleSignIn} className="primary-button">Register Now</button> */}
@@ -230,7 +266,18 @@ const Hero = () => {
                   must eliminate all the attackers or prevent them from planting
                   their bomb.
                 </p>
-                <a href="https://docs.google.com/document/d/15Tj-el79lUH4Yz_bdgKO-A-xXa6vZkX-/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                <h5>Registration Fee : 250/- Per Team</h5>
+                <a href="https://docs.google.com/document/d/15Tj-el79lUH4Yz_bdgKO-A-xXa6vZkX-/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" className="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                { user ?(
+                <>
+                  {(fetchUser?.valorantIsRegistered) ?
+                     (<a  className="buttonRegister" disabled>✅Registered</a>):
+                     (<a href="/valorant-register" className="buttonRegister">Register</a>) 
+                  }
+                  </>
+                ):(
+               <a href="#header" className="buttonRegister">SignIn First</a>
+                )}
               </div>
             </div>
           </div>
@@ -258,7 +305,18 @@ const Hero = () => {
                   over the gaming world to gain the first position and have the
                   opportunity to taste the chicken dinner.
                 </p>
+                <h5>Registration Fee : 200/- Per Team</h5>
                 <a href="https://docs.google.com/document/d/1N6JrVSN825IX0lvxsFkQmzUhnAI4JQdi/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                { user ?(
+                <>
+                  {(fetchUser?.bgmiIsRegistered) ?
+                     (<a  className="buttonRegister" disabled>✅Registered</a>):
+                     (<a href="/bgmi-register" className="buttonRegister">Register</a>) 
+                  }
+                  </>
+                ):(
+               <a href="#header" className="buttonRegister">SignIn First</a>
+                )}
               </div>
               <div
                 className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last"
@@ -300,7 +358,18 @@ const Hero = () => {
                   types. So select your Club and get ready to become the master
                   of the pool!
                 </p>
+                <h5>Registration Fee : 30/- Per Member</h5>
                 <a href="https://docs.google.com/document/d/1EWybAnFJL3cdZvYhkY0JjxCgEUBJWu2n/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                { user ?(
+                <>
+                  {(fetchUser?.ballpoolIsRegistered) ?
+                     (<a  className="buttonRegister" disabled>✅Registered</a>):
+                     (<a href="/ballpool-register" className="buttonRegister">Register</a>) 
+                  }
+                  </>
+                ):(
+               <a href="#header" className="buttonRegister">SignIn First</a>
+                )}
               </div>
             </div>
           </div>
@@ -329,7 +398,18 @@ const Hero = () => {
                   various maps, skills and strategies. Come show us yours and
                   get the crown.
                 </p>
+                <h5>Registration Fee : 250/- Per Team</h5>
                 <a href="https://docs.google.com/document/d/1vigysNGj6gAHFTGAqQ18wZLoOoWHL1Qb/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                { user ?(
+                <>
+                  {(fetchUser?.csIsRegistered) ?
+                     (<a  className="buttonRegister" disabled>✅Registered</a>):
+                     (<a href="/cs-register" className="buttonRegister">Register</a>) 
+                  }
+                  </>
+                ):(
+               <a href="#header" className="buttonRegister">SignIn First</a>
+                )}
               </div>
               <div
                 className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last"
@@ -370,7 +450,18 @@ const Hero = () => {
                   compete against each other to become the most wanted racer of
                   the city.
                 </p>
+                <h5>Registration Fee : 80/- Per Member</h5>
                 <a href="https://docs.google.com/document/d/1zvEs3-9fhTsfvCkxXzDyF5fXzT59SNhf/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" className="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                { user ?(
+                <>
+                  {(fetchUser?.nfsIsRegistered) ?
+                     (<a  className="buttonRegister" disabled>✅Registered</a>):
+                     (<a href="/nfs-register" className="buttonRegister">Register</a>) 
+                  }
+                  </>
+                ):(
+               <a href="#header" className="buttonRegister">SignIn First</a>
+                )}
               </div>
             </div>
           </div>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Profile.css";
-import ProfileIMG from "../assets/DummyProfileImg.jpg";
-import Background from "../assets/backgroundimg.jpg";
+// import Background from "../assets/backgroundimg.jpg";
 import Navbar from "./Navbar";
 import { onAuthStateChanged, signOut } from "@firebase/auth";
 import { auth } from "../firebase";
@@ -81,29 +80,54 @@ const Profile = () => {
           </div>
         </div>
         <h2 className="heading mt-4 mb-4">MY GAMES</h2>
-        {/* <div className="row">
-          <div className="col-lg-4">
-          <p className="games"><p className="mt-3">VALORANT</p></p>
-          </div>
+        <div className="row">
+          {(uid?.valorantIsRegistered) ? (
+            <div className="col-lg-4">
+            <p className="games"><p className="mt-3">VALORANT : {(uid.valorantPaymentStatus)? (<>(Payment Success✅)</>):(<>Payment Pending🟡</>)} </p></p>
+            </div>
+          ):(
+            <></>
+          )}
 
-          <div className="col-lg-4">
-          <p className="games"><p className="mt-3">BGMI</p></p>
-          </div>
+          {(uid?.bgmiIsRegistered) ? (
+            <div className="col-lg-4">
+            <p className="games"><p className="mt-3">BGMI : {(uid.bgmiPaymentStatus)? (<>(Payment Success✅)</>):(<>Payment Pending🟡</>)}</p></p>
+            </div>
+          ):(<></>)}
 
-          <div className="col-lg-4">
-          <p className="games"><p className="mt-3">8 BALL POOL</p></p>
-          </div>
+          {(uid?.ballpoolIsRegistered) ? (
+            <div className="col-lg-4">
+            <p className="games"><p className="mt-3">8 BALL POOL : {(uid.ballpoolPaymentStatus)? (<>(Payment Success✅)</>):(<>Payment Pending🟡</>)}</p></p>
+            </div>
+          ):(<></>)}
 
-          <div className="col-lg-4">
-          <p className="games"><p className="mt-3">NFS</p></p>
-          </div>
+          {(uid?.nfsIsRegistered) ? (
+            <div className="col-lg-4">
+            <p className="games"><p className="mt-3">NFS : {(uid.nfsPaymentStatus)? (<>(Payment Success✅)</>):(<>Payment Pending🟡</>)}</p></p>
+            </div>
+          ):(<></>)}
 
-          <div className="col-lg-4">
-          <p className="games"><p className="mt-3">COD</p></p>
-          </div>
-        </div> */}
+          {(uid?.csIsRegistered) ? (
+            <div className="col-lg-4">
+            <p className="games"><p className="mt-3">CS 1.6 : {(uid.csPaymentStatus)? (<>(Payment Success✅)</>):(<>Payment Pending🟡</>)}</p></p>
+            </div>
+          ):(<></>)}
+        </div>
         {/* <h1 className="endText mt-5 mb-5">Thank You for Registering!!</h1> */}
-        <h1 className="endText mt-5 mb-5">No Games Enrolled</h1>
+
+        { (uid?.ballpoolIsRegistered || 
+        uid?.bgmiIsRegistered ||
+        uid?.csIsregistered ||
+        uid?.nfsIsRegistered ||
+        uid?.valorantIsRegistered) ?(
+          <></>
+        ):
+        (
+          <h1 className="endText mt-5 mb-5">No Games Enrolled</h1>
+        )
+      
+      }
+        
         <h5 className="endText mt-7 pt-5 mb-5" style={{color:'red'}}>*Your Enrolled Games Will Appear Here after Registration*</h5>
       </div>
       <Footer/>
