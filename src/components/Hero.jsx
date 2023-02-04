@@ -204,10 +204,11 @@ const Hero = () => {
                   </div>
                 </a>
               </div>
+              <a className="my-button mt-2" href="#games">Browse Games&nbsp;<i class="bi bi-arrow-down"></i></a>
               <br></br>
-              <h5 className="pt-5" style={{ color: "red" }}>
+              {/* <h5 className="pt-5" style={{ color: "red" }}>
                 *Registration Starts on 5th Feb*
-              </h5>
+              </h5> */}
             </>
           ) : (
             <>
@@ -218,7 +219,7 @@ const Hero = () => {
               >
                 Sign In with Google
               </button>
-              <a className="my-button mt-2" href="#games">Browse Games&nbsp;<i class="bi bi-arrow-down"></i></a>
+              
             </>
           )}
           {/* <button onClick={handleGoogleSignIn} className="primary-button">Register Now</button> */}
