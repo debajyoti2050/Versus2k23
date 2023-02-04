@@ -268,7 +268,16 @@ const Hero = () => {
                 </p>
                 <h5>Registration Fee : 250/- Per Team</h5>
                 <a href="https://docs.google.com/document/d/15Tj-el79lUH4Yz_bdgKO-A-xXa6vZkX-/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" className="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
-                <a href="#" className="buttonRegister">Register</a>
+                { user ?(
+                <>
+                  {(fetchUser?.valorantIsRegistered) ?
+                     (<a  className="buttonRegister" disabled>✅Registered</a>):
+                     (<a href="/valorant-register" className="buttonRegister">Register</a>) 
+                  }
+                  </>
+                ):(
+               <a href="#header" className="buttonRegister">SignIn First</a>
+                )}
               </div>
             </div>
           </div>
@@ -298,7 +307,16 @@ const Hero = () => {
                 </p>
                 <h5>Registration Fee : 200/- Per Team</h5>
                 <a href="https://docs.google.com/document/d/1N6JrVSN825IX0lvxsFkQmzUhnAI4JQdi/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
-                <a href="#" className="buttonRegister">Register</a>
+                { user ?(
+                <>
+                  {(fetchUser?.bgmiIsRegistered) ?
+                     (<a  className="buttonRegister" disabled>✅Registered</a>):
+                     (<a href="/bgmi-register" className="buttonRegister">Register</a>) 
+                  }
+                  </>
+                ):(
+               <a href="#header" className="buttonRegister">SignIn First</a>
+                )}
               </div>
               <div
                 className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last"
@@ -342,7 +360,16 @@ const Hero = () => {
                 </p>
                 <h5>Registration Fee : 30/- Per Member</h5>
                 <a href="https://docs.google.com/document/d/1EWybAnFJL3cdZvYhkY0JjxCgEUBJWu2n/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
-                <a href="#" className="buttonRegister">Register</a>
+                { user ?(
+                <>
+                  {(fetchUser?.ballpoolIsRegistered) ?
+                     (<a  className="buttonRegister" disabled>✅Registered</a>):
+                     (<a href="/ballpool-register" className="buttonRegister">Register</a>) 
+                  }
+                  </>
+                ):(
+               <a href="#header" className="buttonRegister">SignIn First</a>
+                )}
               </div>
             </div>
           </div>
@@ -373,7 +400,16 @@ const Hero = () => {
                 </p>
                 <h5>Registration Fee : 250/- Per Team</h5>
                 <a href="https://docs.google.com/document/d/1vigysNGj6gAHFTGAqQ18wZLoOoWHL1Qb/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
-                <a href="#" className="buttonRegister">Register</a>
+                { user ?(
+                <>
+                  {(fetchUser?.csIsRegistered) ?
+                     (<a  className="buttonRegister" disabled>✅Registered</a>):
+                     (<a href="/cs-register" className="buttonRegister">Register</a>) 
+                  }
+                  </>
+                ):(
+               <a href="#header" className="buttonRegister">SignIn First</a>
+                )}
               </div>
               <div
                 className="big-feature-image-2 col-lg-6 p-3 col-sm-12 order-first order-sm-last"
@@ -416,7 +452,16 @@ const Hero = () => {
                 </p>
                 <h5>Registration Fee : 80/- Per Member</h5>
                 <a href="https://docs.google.com/document/d/1zvEs3-9fhTsfvCkxXzDyF5fXzT59SNhf/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" className="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
-                <a href="#" className="buttonRegister">Register</a>
+                { user ?(
+                <>
+                  {(fetchUser?.nfsIsRegistered) ?
+                     (<a  className="buttonRegister" disabled>✅Registered</a>):
+                     (<a href="/nfs-register" className="buttonRegister">Register</a>) 
+                  }
+                  </>
+                ):(
+               <a href="#header" className="buttonRegister">SignIn First</a>
+                )}
               </div>
             </div>
           </div>
