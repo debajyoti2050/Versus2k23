@@ -13,6 +13,7 @@ import {
   GoogleAuthProvider,
   onAuthStateChanged,
   signInWithPopup,
+  signOut,
 } from "firebase/auth";
 import { auth } from "../firebase";
 import { useEffect } from "react";
@@ -37,6 +38,7 @@ const Hero = () => {
           // console.log(data);
         } catch (err) {
           console.log(err);
+          signOut(auth)
         }
       })
       .catch((error) => {
