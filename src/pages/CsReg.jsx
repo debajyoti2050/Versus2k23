@@ -92,10 +92,11 @@ const CsReg = () => {
                 config
               );
               setLoading(false);
-              navigate("/");
+              navigate("/cs-register-success");
             } catch (error) {
               console.log(error);
               setLoading(false);
+              navigate('/register-fail')
             }
           }}
         >

@@ -126,10 +126,11 @@ const ValorantReg = () => {
                   config
                 );
                 setLoading(false);
-                navigate("/");
+                navigate("/valo-register-success");
               } catch (error) {
                 console.log(error);
                 setLoading(false);
+                navigate('/register-fail')
               }
             }}
           >

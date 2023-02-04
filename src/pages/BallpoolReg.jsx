@@ -94,10 +94,11 @@ const BallpoolReg = () => {
                 config
               );
               setLoading(false);
-              navigate("/");
+              navigate("/ballpool-register-success");
             } catch (error) {
               console.log(error);
               setLoading(false);
+              navigate('/register-fail')
             }
           }}
         >
