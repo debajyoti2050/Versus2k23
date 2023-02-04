@@ -92,7 +92,7 @@ const Hero = () => {
     <>
     <ToastContainer/>
       <header>
-        <div className="hero-video flex">
+        <div className="hero-video flex" id="header">
           <div className="versus">
             <svg
               id="Layer_1"
