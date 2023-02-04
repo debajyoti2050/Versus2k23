@@ -218,6 +218,7 @@ const Hero = () => {
               >
                 Sign In with Google
               </button>
+              <a className="my-button mt-2" href="#games">Browse Games&nbsp;<i class="bi bi-arrow-down"></i></a>
             </>
           )}
           {/* <button onClick={handleGoogleSignIn} className="primary-button">Register Now</button> */}
