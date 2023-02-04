@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Profile.css";
-import ProfileIMG from "../assets/DummyProfileImg.jpg";
 // import Background from "../assets/backgroundimg.jpg";
 import Navbar from "./Navbar";
 import { onAuthStateChanged, signOut } from "@firebase/auth";
@@ -116,10 +115,10 @@ const Profile = () => {
         </div>
         {/* <h1 className="endText mt-5 mb-5">Thank You for Registering!!</h1> */}
 
-        { (uid?.ballpoolIsRegistered && 
-        uid?.bgmiIsRegistered &&
-        uid?.csIsregistered &&
-        uid?.nfsIsRegistered &&
+        { (uid?.ballpoolIsRegistered || 
+        uid?.bgmiIsRegistered ||
+        uid?.csIsregistered ||
+        uid?.nfsIsRegistered ||
         uid?.valorantIsRegistered) ?(
           <></>
         ):
