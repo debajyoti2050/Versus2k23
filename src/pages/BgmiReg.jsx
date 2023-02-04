@@ -128,10 +128,11 @@ const BgmiReg = () => {
                 config
               );
               setLoading(false);
-              navigate("/");
+              navigate("/bgmi-register-success");
             } catch (error) {
               console.log(error);
               setLoading(false);
+              navigate('/register-fail')
             }
           }}
         >

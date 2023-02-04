@@ -92,10 +92,11 @@ const NfsReg = () => {
                 config
               );
               setLoading(false);
-              navigate("/");
+              navigate("/nfs-register-success");
             } catch (error) {
               console.log(error);
               setLoading(false);
+              navigate('/register-fail')
             }
           }}
         >

@@ -8,8 +8,12 @@ import BallpoolReg from "./pages/BallpoolReg";
 import BgmiReg from "./pages/BgmiReg";
 import CsReg from "./pages/CsReg";
 import NfsReg from "./pages/NfsReg";
-import RegistrationSuccess from "./pages/RegistrationSuccess";
+import BGMIRegistrationSuccess from "./pages/BGMIRegistrationSuccess";
 import RegistrationFail from "./pages/RegistrationFail";
+import ValorantRegistrationSuccess from "./pages/ValorantRegistrationSuccess";
+import BallPoolRegistrationSuccess from "./pages/BallPoolRegistrationSuccess";
+import CSREgistrationSuccess from "./pages/CSREgistrationSuccess";
+import NFSRegistrationSuccess from "./pages/NFSRegistrationSuccess";
 
 function App() {
   return (
@@ -22,7 +26,11 @@ function App() {
     <Route path='/bgmi-register' element={<BgmiReg />} />
     <Route path='/cs-register' element={<CsReg />} />
     <Route path='/nfs-register' element={<NfsReg />} />
-    <Route path='/register-success' element={<RegistrationSuccess />} />
+    <Route path='/bgmi-register-success' element={<BGMIRegistrationSuccess />} />
+    <Route path='/valo-register-success' element={<ValorantRegistrationSuccess />} />
+    <Route path='/ballpool-register-success' element={<BallPoolRegistrationSuccess />} />
+    <Route path='/cs-register-success' element={<CSREgistrationSuccess />} />
+    <Route path='/nfs-register-success' element={<NFSRegistrationSuccess />} />
     <Route path='/register-fail' element={<RegistrationFail />} />
 
    </Routes>
