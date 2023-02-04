@@ -25,6 +25,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 const Hero = () => {
   const [user, setUser] = useState(null);
+  const [fetchUser, setFetchUser] = useState(null);
 
   const handleGoogleSignIn = () => {
     const googleProvider = new GoogleAuthProvider();
@@ -60,8 +61,25 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) setUser(user);
+    onAuthStateChanged(auth, async(user) => {
+      if (user) {
+      setUser(user);
+      try{
+        const config = {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `${user.accessToken}`,
+          },
+        };
+        const { data } =await  axios.post('https://versus-event.herokuapp.com/api/v1/8fb6b78dc6d7cb36f2bd0373ce496aa5/getUserByEmail',{email:user.email},config)
+        // console.log(data,'hii');
+        setFetchUser(data)
+      }
+      catch(err){
+        console.log(err);
+      }
+    }
+
       else setUser(null);
     });
   }, [user]);
