@@ -27,9 +27,9 @@ const Hero = () => {
   const [user, setUser] = useState(null);
   const [fetchUser, setFetchUser] = useState(null);
 
-  const handleGoogleSignIn = () => {
-    const googleProvider = new GoogleAuthProvider();
-    signInWithPopup(auth, googleProvider)
+  const handleGoogleSignIn = async() => {
+    const googleProvider =await  new GoogleAuthProvider();
+     await signInWithPopup(auth, googleProvider)
       .then(async (result) => {
         // console.log(result);
         try {
