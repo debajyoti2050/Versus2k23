@@ -68,7 +68,7 @@ const BgmiReg = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
-        console.log(user);
+        // console.log(user);
       } else {
         navigate("/");
       }
@@ -109,7 +109,7 @@ const BgmiReg = () => {
           }}
           validationSchema={validate}
           onSubmit={async (values) => {
-            console.log(values);
+            // console.log(values);
             setLoading(true);
             const config = {
               headers: {
