@@ -8,24 +8,30 @@ import { Navigate, useNavigate } from "react-router";
 import cover from '../assets/profile-cover.jpg'
 import Footer from '../components/Footer'
 import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
 
 const Profile = () => {
   const [user, setUser] = useState(null);
-  const [uid , setUid] = useState(null);
+  const [uid , setUid] = useState();
   const [photoURL, setPhotoURL] = useState(null);
   const [updatedPhotoURL, setUpdatedPhotoURL] = useState(null);
   const navigate = useNavigate()
 
   const userUID=async()=>{
     if(user){
-      const headers={
-      "Content-Type": "application/json",
-      Authorization: `${user?.stsTokenManager.accessToken}`,
+      try{
+        const headers={
+          "Content-Type": "application/json",
+          Authorization: `${user?.stsTokenManager.accessToken}`,
+          }
+          
+          const {data} =await axios.post('https://versus-event.herokuapp.com/api/v1/8fb6b78dc6d7cb36f2bd0373ce496aa5/getUserByEmail',{email:user?.email},{headers})
+          // console.log(data,"hiiii");
+          setUid(data)
       }
-      
-      const {data} =await axios.post('https://versus-event.herokuapp.com/api/v1/8fb6b78dc6d7cb36f2bd0373ce496aa5/getUserByEmail',{email:user?.email},{headers})
-      // console.log(data);
-      setUid(data)
+      catch(error){
+        console.log(error);
+      }
     }
     
   }
@@ -57,6 +63,7 @@ const Profile = () => {
       <div className="container">
         <img className="backgroundimg" src={cover} alt="" />
         <div className="details mt-4">
+          <ToastContainer/>
           <div className="row">
             <div className="col-lg-3 col-md-6">
               {updatedPhotoURL ? (
@@ -69,6 +76,8 @@ const Profile = () => {
               <h1>{user?.displayName}</h1>
               <h5>{user?.email}</h5>
               <h5>UID : {uid?.uniqueCode}</h5>
+              {console.log(uid)}
+              <p>{ uid?.message === "user with this email is not available" ? "⚠️Kindly sign out and try sign in again⚠️" :null}</p>
               {user ? (
             <button onClick={() => signOut(auth)} className="primary-button mt-3">
               Sign Out
