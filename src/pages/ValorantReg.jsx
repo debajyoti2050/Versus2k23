@@ -107,7 +107,7 @@ const ValorantReg = () => {
             }}
             validationSchema={validate}
             onSubmit={async (values) => {
-              console.log(values);
+              // console.log(values);
               setLoading(true);
               const config = {
                 headers: {
@@ -128,7 +128,7 @@ const ValorantReg = () => {
                 setLoading(false);
                 navigate("/valo-register-success");
               } catch (error) {
-                console.log(error);
+                // console.log(error);
                 setLoading(false);
                 navigate('/register-fail')
               }

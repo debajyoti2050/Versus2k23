@@ -36,7 +36,7 @@ const CsReg = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
-        console.log(user);
+        // console.log(user);
       } else {
         navigate("/");
       }
@@ -73,7 +73,7 @@ const CsReg = () => {
           }}
           validationSchema={validate}
           onSubmit={async (values) => {
-            console.log(values);
+            // console.log(values);
             setLoading(true);
             const config = {
               headers: {
