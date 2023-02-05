@@ -106,7 +106,7 @@ const BallpoolReg = () => {
             <section id="appform">
               <div className="container">
                 <div className="header mt-3 mb-4">
-                  <h1>BGMI Registration</h1>
+                  <h1>8Ball Pool Registration</h1>
                 </div>
                 <div className="display">
                   <img src={Valo} alt="valo" />
