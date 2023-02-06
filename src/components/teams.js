@@ -197,8 +197,8 @@ export const graphics = [
      },
      {
           id: 4,
-          name: "Snehal",
-          surname: "Sarkar",
+          name: "Tushar",
+          surname: "Singh",
           image: "./team/graphics/tushar.jpg",
           team: "Graphics team"
      },
