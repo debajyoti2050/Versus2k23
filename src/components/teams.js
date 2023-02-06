@@ -195,20 +195,28 @@ export const graphics = [
           image: "./team/graphics/suddha.jpg",
           team: "Graphics team"
      },
+     {
+          id: 4,
+          name: "Snehal",
+          surname: "Sarkar",
+          image: "./team/graphics/tushar.jpg",
+          team: "Graphics team"
+     },
      // {
-     //      id: 4,
+     //      id: 5,
      //      name: "Debshankar",
      //      surname: "Saha",
      //      image: "",
      //      team: "Graphics team"
      // },
      {
-          id: 5,
+          id: 6,
           name: "Snehal",
           surname: "Sarkar",
           image: "./team/graphics/snehal.jpg",
           team: "Graphics team"
-     }
+     },
+     
 
 ]
 export const website = [
@@ -272,14 +280,14 @@ export const game = [
           game:"BGMI",
           team: "Gaming Coordinators"
      },
-     // {
-     //      id: 2,
-     //      name: "Sayantan",
-     //      surname: "Ghosh",
-     //      image: "",
-     //      game:"BGMI",
-     //      team: "Gaming Coordinators"
-     // },
+     {
+          id: 2,
+          name: "Sayantan",
+          surname: "Ghosh",
+          image: "./team/gaming/sayantan.jpg",
+          game:"BGMI",
+          team: "Gaming Coordinators"
+     },
      {
           id: 3,
           name: "Nirmalya",
@@ -296,14 +304,14 @@ export const game = [
           game:"Valorant",
           team: "Gaming Coordinators"
      },
-     // {
-     //      id: 5,
-     //      name: "Soham",
-     //      surname: "Basu",
-     //      image: "",
-     //      game:"Valorant",
-     //      team: "Gaming Coordinators"
-     // },
+     {
+          id: 5,
+          name: "Soham",
+          surname: "Basu",
+          image: "./team/gaming/sohambasu.jpg",
+          game:"Valorant",
+          team: "Gaming Coordinators"
+     },
      {
           id: 6,
           name: "Pradipta Shankar",
