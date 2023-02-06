@@ -60,6 +60,8 @@ const Hero = () => {
       });
   };
 
+  
+
   useEffect(() => {
     onAuthStateChanged(auth, async(user) => {
       if (user) {
@@ -91,6 +93,7 @@ const Hero = () => {
   return (
     <>
     <ToastContainer/>
+    <section id="hero">
       <header>
         <div className="hero-video flex" id="header">
           <div className="versus">
@@ -228,11 +231,12 @@ const Hero = () => {
           </video>
         </div>
       </header>
+      </section>
 
       {/* About */}
       <About />
       {/* Games Available */}
-      <section id="games" className="pt-5">
+      <section id="game" className="pt-5">
         <div className="section-heading flex">
           <h1>Games</h1>
         </div>
