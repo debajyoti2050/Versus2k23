@@ -236,7 +236,7 @@ const Hero = () => {
       {/* About */}
       <About />
       {/* Games Available */}
-      <section id="game" className="pt-5">
+      <section id="games" className="pt-5">
         <div className="section-heading flex">
           <h1>Games</h1>
         </div>
