@@ -23,6 +23,7 @@ const NfsReg = () => {
   const validate = Yup.object({
     name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
     phone: Yup.string().max(14, "Phone number is not valid").required("Required"),
+    camAmb: Yup.string().max(30, "Must be 30 characters or less")
   })
 
   useEffect(() => {
@@ -70,6 +71,7 @@ const NfsReg = () => {
             player4ID: "",
             player5IName: "",
             player5ID: "",
+            camAmb:""
           }}
           validationSchema={validate}
           onSubmit={async (values) => {
@@ -129,6 +131,12 @@ const NfsReg = () => {
                       type="text"
                       placeholder="Enter 10 digit phone number"
                     />
+                    <TextField
+                      label="Campus Ambassador Referral Code(Optional)"
+                      name="camAmb"
+                      type="text"
+                      placeholder="Enter Campus Ambassador Referral Code"
+                    />
                    
 
                                      
@@ -140,7 +148,8 @@ const NfsReg = () => {
                     </div>
                     {(
                       errors.name ||
-                      errors.phone 
+                      errors.phone ||
+                      errors.camAmb
                       
                     ) && (
                         <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}><span className="error mt-3 mb-3">Mandatory Fields Required </span></div>
