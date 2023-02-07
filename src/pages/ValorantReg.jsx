@@ -57,6 +57,7 @@ const ValorantReg = () => {
       .required("Required"),
     player6Name: Yup.string().max(50, "Must be 50 characters or less"),
     player6RiotID: Yup.string().max(50, "Must be 50 characters or less"),
+    camAmb: Yup.string().max(30, "Must be 30 characters or less"),
   });
 
   useEffect(() => {
@@ -104,6 +105,7 @@ const ValorantReg = () => {
               player5RiotID: "",
               player6Name: "",
               player6RiotID: "",
+              camAmb:""
             }}
             validationSchema={validate}
             onSubmit={async (values) => {
@@ -235,6 +237,12 @@ const ValorantReg = () => {
                         type="text"
                         placeholder="OMEN #1234"
                       />
+                      <TextField
+                      label="Campus Ambassador Referral Code(Optional)"
+                      name="camAmb"
+                      type="text"
+                      placeholder="Enter Campus Ambassador Referral Code"
+                    />
 
                       <div className="display">
                         <button className="btn grad mt-4" type="submit">
@@ -254,7 +262,8 @@ const ValorantReg = () => {
                         errors.player5Name ||
                         errors.player5RiotID ||
                         errors.player6Name ||
-                        errors.player6RiotID) && (
+                        errors.player6RiotID||
+                        errors.camAmb) && (
                           <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}><span className="error mt-3 mb-3">Mandatory Fields Required </span></div>
                       )}
                     </Form>

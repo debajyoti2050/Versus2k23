@@ -113,16 +113,16 @@ const Hero = () => {
                   gradientTransform="matrix(1, 0, 0, 1, 0, 0)"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop offset="0" stop-color="#eee7d9" />
-                  <stop offset=".06" stop-color="#eee7d9" />
-                  <stop offset=".16" stop-color="#eee7d9" />
-                  <stop offset=".26" stop-color="#eee7d9" />
-                  <stop offset=".36" stop-color="#eee7d9" />
-                  <stop offset=".46" stop-color="#eee7d9" />
-                  <stop offset=".58" stop-color="#eee7d9" />
-                  <stop offset=".7" stop-color="#eee7d9" />
-                  <stop offset=".83" stop-color="#eee7d9" />
-                  <stop offset="1" stop-color="#eee7d9" />
+                  <stop offset="0" stopColor="#eee7d9" />
+                  <stop offset=".06" stopColor="#eee7d9" />
+                  <stop offset=".16" stopColor="#eee7d9" />
+                  <stop offset=".26" stopColor="#eee7d9" />
+                  <stop offset=".36" stopColor="#eee7d9" />
+                  <stop offset=".46" stopColor="#eee7d9" />
+                  <stop offset=".58" stopColor="#eee7d9" />
+                  <stop offset=".7" stopColor="#eee7d9" />
+                  <stop offset=".83" stopColor="#eee7d9" />
+                  <stop offset="1" stopColor="#eee7d9" />
                 </linearGradient>
                 <linearGradient
                   id="linear-gradient-2"
@@ -207,7 +207,7 @@ const Hero = () => {
                   </div>
                 </a>
               </div>
-              <a className="my-button mt-5" href="#games">Browse Games&nbsp;<i class="bi bi-arrow-down"></i></a>
+              <a className="my-button mt-5" href="#games">Browse Games&nbsp;<i className="bi bi-arrow-down"></i></a>
               <br></br>
               {/* <h5 className="pt-5" style={{ color: "red" }}>
                 *Registration Starts on 5th Feb*
@@ -310,7 +310,7 @@ const Hero = () => {
                   opportunity to taste the chicken dinner.
                 </p>
                 <h5>Registration Fee : 200/- Per Team</h5>
-                <a href="https://docs.google.com/document/d/1N6JrVSN825IX0lvxsFkQmzUhnAI4JQdi/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                <a href="https://docs.google.com/document/d/1N6JrVSN825IX0lvxsFkQmzUhnAI4JQdi/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" className="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
                 { user ?(
                 <>
                   {(fetchUser?.bgmiIsRegistered) ?
@@ -363,7 +363,7 @@ const Hero = () => {
                   of the pool!
                 </p>
                 <h5>Registration Fee : 30/- Per Member</h5>
-                <a href="https://docs.google.com/document/d/1EWybAnFJL3cdZvYhkY0JjxCgEUBJWu2n/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                <a href="https://docs.google.com/document/d/1EWybAnFJL3cdZvYhkY0JjxCgEUBJWu2n/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" className="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
                 { user ?(
                 <>
                   {(fetchUser?.ballpoolIsRegistered) ?
@@ -403,7 +403,7 @@ const Hero = () => {
                   get the crown.
                 </p>
                 <h5>Registration Fee : 250/- Per Team</h5>
-                <a href="https://docs.google.com/document/d/1vigysNGj6gAHFTGAqQ18wZLoOoWHL1Qb/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" class="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
+                <a href="https://docs.google.com/document/d/1vigysNGj6gAHFTGAqQ18wZLoOoWHL1Qb/edit?usp=sharing&ouid=110794903875831336356&rtpof=true&sd=true" className="buttonClass" target="_blank" rel="noreferrer">Rules & Regulations</a>
                 { user ?(
                 <>
                   {(fetchUser?.csIsRegistered) ?
