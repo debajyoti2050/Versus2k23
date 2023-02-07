@@ -57,7 +57,9 @@ const BgmiReg = () => {
       .max(50, "Must be 50 characters or less"),
       
     player5ID: Yup.string()
-      .max(50, "Must be 50 characters or less")
+      .max(50, "Must be 50 characters or less"),
+
+    camAmb: Yup.string().max(30, "Must be 30 characters or less"),
       
   });
 
@@ -106,6 +108,7 @@ const BgmiReg = () => {
             player4ID: "",
             player5Name: "",
             player5ID: "",
+            camAmb:""
           }}
           validationSchema={validate}
           onSubmit={async (values) => {
@@ -221,16 +224,22 @@ const BgmiReg = () => {
                       placeholder="Enter Player 4 BGMI ID"
                     />
                     <TextField
-                      label="Player 5 Name (substiute)"
+                      label="Player 5 Name optional (substiute)"
                       name="player5Name"
                       type="text"
                       placeholder="Enter Player 5 Name"
                     />
                     <TextField
-                      label="Player 5 BGMI ID (substiute)"
+                      label="Player 5 BGMI ID optional (substiute)"
                       name="player5ID"
                       type="number"
                       placeholder="Enter Player 5 BGMI ID"
+                    />
+                    <TextField
+                      label="Campus Ambassador Referral Code(Optional)"
+                      name="camAmb"
+                      type="text"
+                      placeholder="Enter Campus Ambassador Referral Code"
                     />
 
                     
@@ -253,7 +262,8 @@ const BgmiReg = () => {
                       errors.player4Name ||
                       errors.player4ID ||
                       errors.player5Name ||
-                      errors.player5ID
+                      errors.player5ID ||
+                      errors.camAmb
                     ) && (
                         <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}><span className="error mt-3 mb-3">Mandatory Fields Required </span></div>
                     )}

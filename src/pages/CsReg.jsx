@@ -28,6 +28,7 @@ const CsReg = () => {
     player3Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
     player4Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
     player5Name: Yup.string().max(50, "Must be 50 characters or less").required("Required"),
+    camAmb: Yup.string().max(30, "Must be 30 characters or less")
   })
 
   useEffect(() => {
@@ -69,6 +70,7 @@ const CsReg = () => {
             player3Name: "",
             player4Name: "",
             player5Name: "",
+            camAmb: "",
 
           }}
           validationSchema={validate}
@@ -136,37 +138,44 @@ const CsReg = () => {
                       placeholder="Enter your team name"
                     />
                     <TextField
-                      label="Player 1 Name*"
+                      label="Player 1 Name*(Original Name)"
                       name="player1Name"
                       type="text"
                       placeholder="Enter player 1 name"
                     />
                     <TextField
-                      label="Player 2 Name*"
+                      label="Player 2 Name*(Original Name)"
                       name="player2Name"
                       type="text"
                       placeholder="Enter player 2 name"
                     />
                     <TextField
-                      label="Player 3 Name*"
+                      label="Player 3 Name*(Original Name)"
                       name="player3Name"
                       type="text"
                       placeholder="Enter player 3 name"
                     />
                     <TextField
 
-                      label="Player 4 Name*"
+                      label="Player 4 Name*(Original Name)"
                       name="player4Name"
                       type="text"
                       placeholder="Enter player 4 name"
                     />
                     <TextField
 
-                      label="Player 5 Name*"
+                      label="Player 5 Name*(Original Name)"
                       name="player5Name"
                       type="text"
                       placeholder="Enter player 5 name"
                     />
+                    <TextField
+                      label="Campus Ambassador Referral Code(Optional)"
+                      name="camAmb"
+                      type="text"
+                      placeholder="Enter Campus Ambassador Referral Code"
+                    />
+
 
                     <div className="display">
                       <button className="btn grad mt-4" type="submit">
@@ -181,7 +190,8 @@ const CsReg = () => {
                       errors.player2Name ||
                       errors.player3Name ||
                       errors.player4Name ||
-                      errors.player5Name
+                      errors.player5Name ||
+                      errors.camAmb
                     ) && (
                         <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}><span className="error mt-3 mb-3">Mandatory Fields Required </span></div>
                     )}
