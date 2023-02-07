@@ -136,7 +136,7 @@ const BallpoolReg = () => {
                     <TextField
                       label="8 Ball Pool UID*"
                       name="ballpoolUID"
-                      type="number"
+                      type="text"
                       placeholder="Enter your 8 Ball Pool UID"
                     />
                     <TextField
