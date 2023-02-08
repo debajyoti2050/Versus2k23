@@ -39,8 +39,10 @@ const Hero = () => {
           );
           // console.log(data);
         } catch (err) {
+          // console.log(err);
+          signOut(auth)
           toast.error(
-            err,
+            err.message,
             {
               position: toast.POSITION.TOP_RIGHT,
               autoClose: 5000,
@@ -50,13 +52,24 @@ const Hero = () => {
               draggable: true,
               theme:"dark"
             }
-          )
-          console.log(err);
-          signOut(auth)
+          );
+          
         }
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
+        // toast.error(
+        //   error,
+        //   {
+        //     position: toast.POSITION.TOP_RIGHT,
+        //     autoClose: 5000,
+        //     hideProgressBar: false,
+        //     closeOnClick: true,
+        //     pauseOnHover: true,
+        //     draggable: true,
+        //     theme:"dark"
+        //   }
+        // );
       });
   };
 
@@ -92,8 +105,9 @@ const Hero = () => {
 
   return (
     <>
-    <ToastContainer/>
+    
     <section id="hero">
+    <ToastContainer/>
       <header>
         <div className="hero-video flex" id="header">
           <div className="versus">
