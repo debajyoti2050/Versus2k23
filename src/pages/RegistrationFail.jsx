@@ -30,8 +30,9 @@ const RegistrationFail = () => {
   return (
     <>
       <Navbar />
+      <section id="fail">
       <div class="container">
-        <div class="text-center mt-5">
+        <div class="text-center">
           <img class="profileimg2" src={ErrorIMG} alt="" />
         </div>
         <p class="text-center T-text mb-4">Oops!</p>
@@ -40,20 +41,34 @@ const RegistrationFail = () => {
         
         <div class="text-center">
           <a onClick= {() =>signOut(auth)} >
-            <div class="btn prof-but pr-4 pl-4 mb-5" >
+            <div class="btn prof-but pr-4 pl-4 mb-4" >
               Sign Out
             </div>
           </a>
+          
         </div>
         <div class="text-center">
+        <a href="/">
+            <div class="btn prof-but mx-2 pr-4 pl-4 mb-4">
+              <i class="bi bi-arrow-up-left"></i>&nbsp;Back to Home
+            </div>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=8697812885" target="_blank">
+            <div class="btn prof-but mx-2 pr-4 pl-4 mb-4">
+            <span style={{color:"red", fontWeight:"500"}}>Report this problem </span><span style={{color:"green", fontWeight:"600"}}><i class="bi bi-whatsapp"></i></span>
+            </div>
+          </a>
+        </div>
+        {/* <div class="text-center">
           <a href="/">
             <div class="btn prof-but pr-4 pl-4 mb-5">
               <i class="bi bi-arrow-up-left"></i>&nbsp;Back to Home
             </div>
           </a>
-        </div>
+        </div> */}
         
       </div>
+      </section>
       <Footer />
     </>
   );

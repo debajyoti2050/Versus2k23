@@ -273,7 +273,7 @@ const Hero = () => {
                 // data-aos="fade-left"
                 // data-aos-duration="1500"
               >
-                <h4>5v5</h4>
+                {/* <h4>5v5</h4> */}
                 <h3>Valorant</h3>
                 <p>
                   VALORANT is a 5v5 character-based tactical FPS where precise
@@ -312,7 +312,7 @@ const Hero = () => {
                 // data-aos="fade-right"
                 // data-aos-duration="1500"
               >
-                <h4>Battle Royale</h4>
+                {/* <h4>Battle Royale</h4> */}
                 <h3>BGMI</h3>
                 <p>
                   Battlegrounds Mobile India, or BGMI, is a player-versus-player
@@ -365,7 +365,7 @@ const Hero = () => {
                 // data-aos="fade-left"
                 // data-aos-duration="1500"
               >
-                <h4>1v1</h4>
+                {/* <h4>1v1</h4> */}
                 <h3>8 Ball Pool</h3>
                 <p>
                   8 ball pool is one of the most popular and highly addictive
@@ -404,7 +404,7 @@ const Hero = () => {
                 // data-aos="fade-right"
                 // data-aos-duration="1500"
               >
-                <h4>5v5</h4>
+                {/* <h4>5v5</h4> */}
                 <h3>Counter Strike 1.6</h3>
                 <p>
                   Counter-Strike or Counter-Strike 1.6 also known as Half-Life
@@ -458,7 +458,7 @@ const Hero = () => {
                 // data-aos="fade-left"
                 // data-aos-duration="1500"
               >
-                <h4>1v1</h4>
+                {/* <h4>1v1</h4> */}
                 <h3>Need For Speed</h3>
                 <p>
                   Need For Speed (NFS) Most Wanted 2005 is a multiplatform
