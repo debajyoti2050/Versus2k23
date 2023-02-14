@@ -141,7 +141,7 @@ const Profile = () => {
             </div>
           ):(<></>)}
         </div>
-      </>)}
+      
 
         { (uid?.ballpoolIsRegistered || 
         uid?.bgmiIsRegistered ||
@@ -165,6 +165,7 @@ const Profile = () => {
             </div>
           </a>
           </div>
+          </>)}
       </div>
     
       <Footer/>
