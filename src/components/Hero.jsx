@@ -27,6 +27,20 @@ const Hero = () => {
   const [user, setUser] = useState(null);
   const [fetchUser, setFetchUser] = useState(null);
 
+  const regClose = () =>{
+    toast.info("Registrations Closed. All Slots are booked",
+    {
+      position: toast.POSITION.TOP_RIGHT,
+      autoClose: 11000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme:"dark"
+    }
+    )
+  }
+
   const handleGoogleSignIn = async() => {
     const googleProvider =await  new GoogleAuthProvider();
      await signInWithPopup(auth, googleProvider)
@@ -382,7 +396,9 @@ const Hero = () => {
                 <>
                   {(fetchUser?.ballpoolIsRegistered) ?
                      (<a  className="buttonRegister" disabled>✅Registered</a>):
-                     (<a href="/ballpool-register" className="buttonRegister">Register</a>) 
+                     (<a 
+                      // href="/ballpool-register" 
+                      className="buttonRegister" onClick={regClose}>Register</a>) 
                   }
                   </>
                 ):(

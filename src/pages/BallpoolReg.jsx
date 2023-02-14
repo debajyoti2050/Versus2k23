@@ -151,7 +151,7 @@ const BallpoolReg = () => {
                     
 
                     <div className="display">
-                      <button className="btn grad mt-4" type="submit">
+                      <button className="btn grad mt-4" type="submit" disabled>
                         Submit
                       </button>
                     </div>
