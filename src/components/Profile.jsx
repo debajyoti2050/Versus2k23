@@ -76,7 +76,6 @@ const Profile = () => {
               <h1>{user?.displayName}</h1>
               <h5>{user?.email}</h5>
               <h5>UID : {uid?.uniqueCode}</h5>
-              {console.log(uid)}
               <p>{ uid?.message === "user with this email is not available" ? "⚠️Kindly sign out and try sign in again⚠️" :null}</p>
               {user ? (
             <button onClick={() => signOut(auth)} className="primary-button mt-3">
@@ -137,7 +136,7 @@ const Profile = () => {
       
       }
         
-        <h5 className="endText mt-7 pt-5 mb-5" style={{color:'red'}}>*Your Enrolled Games Will Appear Here after Registration*</h5>
+        {/* <h5 className="endText mt-7 pt-5 mb-5" style={{color:'red'}}>*Your Enrolled Games Will Appear Here after Registration*</h5> */}
       </div>
       <Footer/>
     </>
