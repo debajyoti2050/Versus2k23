@@ -76,6 +76,7 @@ const Profile = () => {
               <h1>{user?.displayName}</h1>
               <h5>{user?.email}</h5>
               <h5>UID : {uid?.uniqueCode}</h5>
+              
               <p>{ uid?.message === "user with this email is not available" ? "⚠️Kindly sign out and try sign in again⚠️" :null}</p>
               {user ? (
             <button onClick={() => signOut(auth)} className="primary-button mt-3">
@@ -136,7 +137,15 @@ const Profile = () => {
       
       }
         
-        {/* <h5 className="endText mt-7 pt-5 mb-5" style={{color:'red'}}>*Your Enrolled Games Will Appear Here after Registration*</h5> */}
+        {/* <h5 className="endText mt-7 pt-5 mb-4" style={{color:'red'}}>*Your Enrolled Games Will Appear Here after Registration*</h5> */}
+        <h5 className="endText mt-2 pt-5 mb-4" style={{color:'red'}}>Facing Technical Issues?</h5>
+        <div className="text-center">
+        <a href="https://api.whatsapp.com/send?phone=8697812885" target="_blank">
+            <div class="btn prof-but mx-2 pr-4 pl-4 mb-4">
+            <span style={{color:"red", fontWeight:"500"}}>Report  Problem </span><span style={{color:"green", fontWeight:"600"}}><i class="bi bi-whatsapp"></i></span>
+            </div>
+          </a>
+          </div>
       </div>
       <Footer/>
     </>
