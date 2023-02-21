@@ -86,7 +86,7 @@ const NfsReg = () => {
 
             try {
               await axios.post(
-                "https://versus-event.herokuapp.com/api/v1/cb36f2bd0373ce496aa5/registerNfs",
+                "https://versus2k23-backend.onrender.com/api/v1/cb36f2bd0373ce496aa5/registerNfs",
                 {
                   ...values,
                   email: user.email,

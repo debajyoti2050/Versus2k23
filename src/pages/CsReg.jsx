@@ -86,7 +86,7 @@ const CsReg = () => {
 
             try {
               await axios.post(
-                "https://versus-event.herokuapp.com/api/v1/541c8f7749f16d70/registerCs",
+                "https://versus2k23-backend.onrender.com/api/v1/541c8f7749f16d70/registerCs",
                 {
                   ...values,
                   email: user.email,

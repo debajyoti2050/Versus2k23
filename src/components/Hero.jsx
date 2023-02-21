@@ -48,7 +48,7 @@ const Hero = () => {
         // console.log(result);
         try {
           const { data } = await axios.post(
-            "https://versus-event.herokuapp.com/api/v1/9c142e80023e07c3/registerUser",
+            "https://versus2k23-backend.onrender.com/api/v1/9c142e80023e07c3/registerUser",
             { name: result.user.displayName, email: result.user.email }
           );
           // console.log(data);
@@ -100,7 +100,7 @@ const Hero = () => {
             Authorization: `${user.accessToken}`,
           },
         };
-        const { data } =await  axios.post('https://versus-event.herokuapp.com/api/v1/8fb6b78dc6d7cb36f2bd0373ce496aa5/getUserByEmail',{email:user.email},config)
+        const { data } =await  axios.post('https://versus2k23-backend.onrender.com/api/v1/8fb6b78dc6d7cb36f2bd0373ce496aa5/getUserByEmail',{email:user.email},config)
         // console.log(data,'hii');
         setFetchUser(data)
       }

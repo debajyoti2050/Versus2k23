@@ -88,7 +88,7 @@ const BallpoolReg = () => {
 
             try {
               await axios.post(
-                "https://versus-event.herokuapp.com/api/v1/828dc227520faa769b3226e8fc7f5431/registerBallPool",
+                "https://versus2k23-backend.onrender.com/api/v1/828dc227520faa769b3226e8fc7f5431/registerBallPool",
                 {
                   ...values,
                   email: user.email,
