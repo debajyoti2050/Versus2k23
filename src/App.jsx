@@ -21,11 +21,11 @@ function App() {
     <Route exact path="/" element={<Home />} />
     <Route path='/profile' element={<Profile />} />
     <Route path='/teams' element={<Teams />} />
-    <Route path='/valorant-register' element={<ValorantReg />} />
+    {/* <Route path='/valorant-register' element={<ValorantReg />} />
     <Route path='/ballpool-register' element={<BallpoolReg />} />
     <Route path='/bgmi-register' element={<BgmiReg />} />
     <Route path='/cs-register' element={<CsReg />} />
-    <Route path='/nfs-register' element={<NfsReg />} />
+    <Route path='/nfs-register' element={<NfsReg />} /> */}
     <Route path='/bgmi-register-success' element={<BGMIRegistrationSuccess />} />
     <Route path='/valo-register-success' element={<ValorantRegistrationSuccess />} />
     <Route path='/ballpool-register-success' element={<BallPoolRegistrationSuccess />} />
