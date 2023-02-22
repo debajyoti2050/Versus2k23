@@ -26,11 +26,11 @@ function App() {
     <Route path='/bgmi-register' element={<BgmiReg />} />
     <Route path='/cs-register' element={<CsReg />} />
     <Route path='/nfs-register' element={<NfsReg />} /> */}
-    <Route path='/bgmi-register-success' element={<BGMIRegistrationSuccess />} />
+    {/* <Route path='/bgmi-register-success' element={<BGMIRegistrationSuccess />} />
     <Route path='/valo-register-success' element={<ValorantRegistrationSuccess />} />
     <Route path='/ballpool-register-success' element={<BallPoolRegistrationSuccess />} />
     <Route path='/cs-register-success' element={<CSREgistrationSuccess />} />
-    <Route path='/nfs-register-success' element={<NFSRegistrationSuccess />} />
+    <Route path='/nfs-register-success' element={<NFSRegistrationSuccess />} /> */}
     <Route path='/register-fail' element={<RegistrationFail />} />
 
    </Routes>
